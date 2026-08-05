@@ -1,3 +1,20 @@
+# N is for Nature Play!
+
+This is a project for a nature landscape designer specializing in sensory outdoor spaces for kids. We flatlined in wordpress with a jenky dinosaur of a website that was beyond bloated. Took a gorgeous playful brand and turned it into a real platform.
+
+## the pre-project plan
+
+Designs are now finalized and approved, the basic site structure goes up in about 30 days with the following plan for the blog as well as the e-courses and e-books platform going up the following sixty days. Discussing feasibility with client of building a simple e-platform for her vs having her keep her content on a lcms and link in.
+
+Project will ultimately need:
+
+- user managment
+- payment integration
+- automated email of pdf documents on confirmed purchase
+- integration with a lcms platform or gated delivery of course syllabus + video content.
+
+Planning to uses stripe API for payments. Course is TBD w/ client. Expectation is to keep user management as simple and limited a process as possible.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
