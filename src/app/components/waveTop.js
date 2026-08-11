@@ -1,9 +1,27 @@
+"use client";
+
 import styles from "./wave.module.css";
+import { motion } from "motion/react";
 
 export default function WaveTop({ spacer = "#cbdcbe", wave = "#f7f6f2" }) {
   return (
     <>
-      <div className={styles.waveTop} aria-hidden="true">
+      <motion.div
+        initial={{ y: 2 }}
+        whileInView={{ y: 0 }}
+        transition={{
+          type: "spring",
+          stiffness: 120,
+          damping: 1,
+          mass: 0.8,
+        }}
+        viewport={{
+          once: true,
+          amount: 0.7,
+        }}
+        className={styles.waveTop}
+        aria-hidden="true"
+      >
         <svg
           viewBox="0 0 766.53 80"
           preserveAspectRatio="none"
@@ -14,7 +32,7 @@ export default function WaveTop({ spacer = "#cbdcbe", wave = "#f7f6f2" }) {
             fill={wave}
           />
         </svg>
-      </div>
+      </motion.div>
       <div className={styles.wave} aria-hidden="true">
         <svg
           viewBox="0 0 766.53 80"

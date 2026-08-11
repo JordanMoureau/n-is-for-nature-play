@@ -16,7 +16,7 @@ const SHAPES = {
 
   white: {
     viewBox: "0 0 166.01 43.16",
-    textColor: "#33856b",
+    textColor: "#e4b928",
     widthEm: 7.5,
     paths: [
       {

@@ -1,0 +1,90 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 525px;
+  gap: 3rem;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: -50 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.card {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 440px;
+  padding: 2rem 1rem 1rem;
+  background: var(--sage);
+  border-radius: 50% 50% 3rem 3rem / 22% 22% 8% 8%;
+  text-align: center;
+}
+
+.cardIcon {
+  width: 200px;
+  height: 220px;
+  object-fit: contain;
+}
+
+.inner {
+  margin-bottom: 0.75rem;
+}
+
+.card h3 {
+  font-size: clamp(1.8rem, 3.5rem, 4.5rem);
+
+  text-transform: uppercase;
+  font-family: var(--good-avocado);
+  font-weight: 600;
+}
+
+.card p {
+  max-width: 290px;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+@media (max-width: 950px) {
+  .cards {
+    gap: 1.5rem;
+  }
+
+  .card {
+    min-height: 410px;
+    padding: 2.5rem 1.25rem 4rem;
+  }
+
+  .cardIcon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    max-width: 430px;
+    padding-inline: 1rem;
+  }
+
+  .card {
+    min-height: 420px;
+    padding: 3rem 2rem 4.5rem;
+  }
+
+  .cardIcon {
+    width: 115px;
+    height: 115px;
+  }
+}

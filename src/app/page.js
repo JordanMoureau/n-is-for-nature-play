@@ -1,8 +1,12 @@
 import ContactForm from "./components/contactForm";
 import WaveBottom from "./components/waveBottom";
 import styles from "./page.module.css";
+import Cards from "./components/cards";
 
 import Image from "next/image";
+import OrganicButton from "./components/organicButton";
+import WaveTop from "./components/waveTop";
+import LeafOne from "./components/leafOne";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
@@ -180,6 +184,76 @@ export default function Home() {
           height={800}
         />
       </div>
+
+      <section className={styles.introSection}>
+        <div className={styles.introContent}>
+          <h2 className={styles.introHeading}>
+            I Help Families &amp; Educators
+            <br />
+            Create Outdoor Spaces That Feel
+            <div className={styles.introAccent}>magical &amp; meaningful.</div>
+          </h2>
+
+          <p className={styles.introText}>
+            Children need more than playground equipment. They need mud, sticks,
+            gardens, textures, movement, quiet corners, climbing, digging,
+            pretending, and places where their whole bodies can settle into
+            play.
+            <br /> <br />
+            At N is for Nature Play, Jena brings together landscape design,
+            child development, sensory awareness, and hands-on creativity to
+            help you build outdoor spaces that support real learning,
+            regulation, confidence, and connection.
+          </p>
+
+          <div className={styles.bottomRow}>
+            <LeafOne />
+
+            <OrganicButton variant="yellow" fontSize={"2.2rem"}>
+              Meet Jena
+            </OrganicButton>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.image}>
+        <WaveTop wave={"#afa9d2"} spacer="#f7f6f2" />
+        <WaveBottom wave={"#f7f6f2"} spacer="#afa9d2" />
+      </section>
+
+      <Cards variant={"white"} />
+
+      <section className={styles.naturePlaySection}>
+        <WaveTop wave={"#338e74"} spacer={"#3d385c"} />
+        <div className={styles.naturePlayContent}>
+          <h2>
+            Nature Play Spaces for Homes, Schools,
+            <br />
+            Childcare Centers, and Outdoor Learning Programs
+          </h2>
+
+          <p>
+            Whether you’re starting with a backyard, a preschool playground, a
+            school garden, or a larger community space, N is for Nature Play
+            helps transform ordinary outdoor areas into meaningful environments
+            for child-led exploration.
+            <br />
+            <br />
+            Every space can include opportunities for movement, sensory play,
+            loose parts, imaginative play, garden interaction, quiet regulation,
+            and hands-on discovery.
+          </p>
+
+          <OrganicButton
+            variant={"white"}
+            href={"/about-nature-play"}
+            fontSize={"3rem"}
+          >
+            Learn More
+          </OrganicButton>
+        </div>
+        <WaveBottom spacer={"#e4b928"} wave={"#3d385c"} />
+      </section>
 
       <ContactForm />
     </main>

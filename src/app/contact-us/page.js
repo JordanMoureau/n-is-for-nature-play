@@ -157,16 +157,6 @@ export default function ContactUs() {
           <h1> Contact N is Nature Play </h1>
           <h2>for more information about custom designs, courses and More</h2>
         </div>
-        <WaveBottom wave="#f7f6f2" />
-      </div>
-
-      <div className={styles.image}>
-        <Image
-          src={"/hero.jpg"}
-          alt="N is for Nature Play"
-          width={2200}
-          height={1200}
-        />
       </div>
 
       <ContactForm />

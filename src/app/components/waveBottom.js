@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "motion/react";
+
 import styles from "./wave.module.css";
 
 export default function WaveBottom({ wave = "#cdddc0", spacer = "#f7f6f2" }) {
@@ -15,7 +19,22 @@ export default function WaveBottom({ wave = "#cdddc0", spacer = "#f7f6f2" }) {
         </svg>
       </div>
 
-      <div className={styles.waveBottomBorder} aria-hidden="true">
+      <motion.div
+        initial={{ y: 2 }}
+        whileInView={{ y: 0 }}
+        transition={{
+          type: "spring",
+          stiffness: 120,
+          damping: 1,
+          mass: 0.8,
+        }}
+        viewport={{
+          once: true,
+          amount: 0.7,
+        }}
+        className={styles.waveBottomBorder}
+        aria-hidden="true"
+      >
         <svg
           viewBox="0 270 766.53 94"
           preserveAspectRatio="none"
@@ -23,7 +42,7 @@ export default function WaveBottom({ wave = "#cdddc0", spacer = "#f7f6f2" }) {
         >
           <path d={path} fill={spacer} />
         </svg>
-      </div>
+      </motion.div>
     </>
   );
 }

@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  padding: clamp(3rem, 6vw, 6rem) var(--page-padding);
+  padding: clamp(3rem, 6vw, 6rem);
   background: var(--yellow);
   border-top: 35px solid var(--white);
 }
@@ -56,7 +56,7 @@
 .linkColumn a {
   color: var(--white);
   font-family: var(--font-body);
-  font-size: clamp(0.9rem, 1.2vw, 1.15rem);
+  font-size: clamp(0.9rem, 1vw, 1rem);
   font-weight: 700;
   line-height: 1.25;
   text-decoration: none;
