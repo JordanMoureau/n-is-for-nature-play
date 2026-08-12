@@ -186,6 +186,8 @@ export default function Home() {
       </div>
 
       <section className={styles.introSection}>
+        <WaveTop wave={"#afa9d2"} spacer={"#f7f6f2"} />
+        <WaveBottom wave={"#f7f6f2"} spacer={"#afa9d2"} />
         <div className={styles.introContent}>
           <h2 className={styles.introHeading}>
             I Help Families &amp; Educators
@@ -209,17 +211,16 @@ export default function Home() {
           <div className={styles.bottomRow}>
             <LeafOne />
 
-            <OrganicButton variant="yellow" fontSize={"2.2rem"}>
-              Meet Jena
-            </OrganicButton>
+            <div className={styles.bumper}>
+              <OrganicButton variant="yellow" fontSize={"2.2rem"}>
+                Meet Jena
+              </OrganicButton>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className={styles.image}>
-        <WaveTop wave={"#afa9d2"} spacer="#f7f6f2" />
-        <WaveBottom wave={"#f7f6f2"} spacer="#afa9d2" />
-      </section>
+      <section className={styles.imageLeafKids}></section>
 
       <Cards variant={"white"} />
 

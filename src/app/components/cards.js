@@ -1,5 +1,6 @@
 import styles from "./cards.module.css";
 import OrganicButton from "./organicButton";
+import WaveTop from "./waveTop";
 
 const cardContent = [
   {
@@ -28,6 +29,7 @@ const cardContent = [
 export default function Cards({ variant }) {
   return (
     <div className={styles.cards}>
+      <WaveTop wave={"#afa9d2"} spacer={"#f7f6f2"} />
       {cardContent.map((card) => (
         <div className={styles.card} key={card.title}>
           <img src={card.icon} alt="" className={styles.cardIcon} />
