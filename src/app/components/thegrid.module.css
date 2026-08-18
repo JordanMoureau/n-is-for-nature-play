@@ -1,0 +1,74 @@
+.thegrid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.toprow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.bigone {
+  min-height: 475px;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
+.doubles {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+}
+
+.doubleone,
+.doubletwo {
+  min-height: 215px;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
+.lowerrow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.lowbox {
+  min-height: 275px;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
+.altColor {
+  background-color: var(--green);
+}
+
+.bigone,
+.midbox,
+.lowbox {
+  padding: 1rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 3rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lowbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

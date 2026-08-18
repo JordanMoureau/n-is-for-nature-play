@@ -7,6 +7,7 @@ import Image from "next/image";
 import OrganicButton from "./components/organicButton";
 import WaveTop from "./components/waveTop";
 import LeafOne from "./components/leafOne";
+import TheGrid from "./components/theGrid";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
@@ -147,6 +148,47 @@ const jsonLd = {
   ],
 };
 
+const bigBox = {
+  number: "#1",
+  title: "Calmer Nervous Systems",
+  text: "Nature gives children space to move, breathe, notice, dig, touch, climb, listen, and settle.",
+  backgroundImage: "/kids-bubbles.jpeg",
+};
+
+const midBoxes = [
+  {
+    number: "#2",
+    title: "Stronger Bodies",
+    text: "Outdoor play builds balance, coordination, strength, confidence, and body awareness.",
+    altColor: true,
+  },
+  {
+    number: "#3",
+    title: "Deeper Imagination",
+    text: "A stick can become a wand, a bridge, a tool, a sword, a fishing pole, or the entire plot of a tiny woodland opera.",
+    backgroundImage: "/kids-leaf-happy.jpeg",
+  },
+];
+
+const smallBoxes = [
+  {
+    number: "#4",
+    title: "Connection",
+    text: "Children build relationships with each other, their caregivers, and the living world around them.",
+    altColor: true,
+  },
+  {
+    backgroundImage: "/kids-stick.jpeg",
+    alt: "Children playing outside",
+  },
+  {
+    number: "#5",
+    title: "Sensory",
+    text: "Children build relationships with each other, their caregivers, and the living world around them.",
+    altColor: true,
+  },
+];
+
 export default function Home() {
   return (
     <main>
@@ -255,6 +297,22 @@ export default function Home() {
         </div>
         <WaveBottom spacer={"#e4b928"} wave={"#3d385c"} />
       </section>
+
+      <div className={styles.grid}>
+        <div className={styles.gridtop}>
+          <h2>What children gain from sensory-based nature play</h2>
+          <div className={styles.iconrow}>
+            <Image src="/leaf-two.png" alt="" width={75} height={85} />
+            <Image src="/shovel.png" alt="" width={75} height={80} />
+          </div>
+          <p>
+            Nature Play isn't just about entertainment. It has documented
+            pysiological benefits to children and we build spaces to enhance
+            those benefits for kids.
+          </p>
+        </div>
+        <TheGrid bigBox={bigBox} midBoxes={midBoxes} smallBoxes={smallBoxes} />
+      </div>
 
       <ContactForm />
     </main>

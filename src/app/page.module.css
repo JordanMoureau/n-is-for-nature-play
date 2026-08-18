@@ -130,3 +130,37 @@
     font-weight: 600;
   }
 }
+
+.grid {
+  padding: 13rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gridtop {
+  max-width: 900px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--yellow);
+  h2 {
+    font-family: var(--bubblegum);
+    font-size: 5.5rem;
+  }
+  p {
+    max-width: 650px;
+    font-size: 1.3rem;
+  }
+
+  .iconrow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: -75px;
+  }
+}
