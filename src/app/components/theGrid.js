@@ -6,7 +6,9 @@ export default function TheGrid({ bigBox, midBoxes = [], smallBoxes = [] }) {
 
     return (
       <div
-        className={`${className} ${box.altColor ? styles.altColor : ""}`}
+        className={`${className} ${
+          box.altColor ? styles.altColor : styles.colorMain
+        }`}
         style={
           box.backgroundImage
             ? {

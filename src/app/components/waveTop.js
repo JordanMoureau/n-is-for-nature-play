@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 export default function WaveTop({ spacer = "#cbdcbe", wave = "#f7f6f2" }) {
   return (
     <>
-      <motion.div
+      <div
         initial={{ y: 2 }}
         whileInView={{ y: 0 }}
         transition={{
@@ -32,7 +32,7 @@ export default function WaveTop({ spacer = "#cbdcbe", wave = "#f7f6f2" }) {
             fill={wave}
           />
         </svg>
-      </motion.div>
+      </div>
       <div className={styles.wave} aria-hidden="true">
         <svg
           viewBox="0 0 766.53 80"

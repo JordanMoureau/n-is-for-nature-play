@@ -1,15 +1,20 @@
+"use client";
+
 import Link from "next/link";
 import styles from "./organicButton.module.css";
+import { useState } from "react";
 
 const SHAPES = {
   green: {
     viewBox: "0 0 166.01 43.16",
     textColor: "#f7f6f2",
+    hoverColor: "#f7f6f2",
+    hoverText: "#338e74",
     widthEm: 6,
     paths: [
       {
         d: "M15,40.01s-12.48-1.85-14.06-12.16S-1.2,10.41,7.14,6.45C15.48,2.49,41.21-.95,79.33.24c38.12,1.19,59.8-3.83,76.24,6.61,16.44,10.44,12.63,30.53-5.48,33.04-18.11,2.51-30.97-1.2-62.18,1.06-31.21,2.25-62.7,3.94-72.9-.93Z",
-        fill: "#33856b",
+        fill: "#338e74",
       },
     ],
   },
@@ -17,11 +22,13 @@ const SHAPES = {
   white: {
     viewBox: "0 0 166.01 43.16",
     textColor: "#e4b928",
+    hoverColor: "#e4b928",
+    hoverText: "#f7f6f2",
     widthEm: 7.5,
     paths: [
       {
         d: "M15,40.01s-12.48-1.85-14.06-12.16S-1.2,10.41,7.14,6.45C15.48,2.49,41.21-.95,79.33.24c38.12,1.19,59.8-3.83,76.24,6.61,16.44,10.44,12.63,30.53-5.48,33.04-18.11,2.51-30.97-1.2-62.18,1.06-31.21,2.25-62.7,3.94-72.9-.93Z",
-        fill: "#f5f2f0",
+        fill: "#f7f6f2",
       },
     ],
   },
@@ -29,6 +36,8 @@ const SHAPES = {
   lavender: {
     viewBox: "0 0 142.8 43.18",
     textColor: "#f5f2f0",
+    hoverColor: "#afa9d2",
+    hoverText: "#f7f6f2",
     widthEm: 5.5,
     paths: [
       {
@@ -47,6 +56,8 @@ const SHAPES = {
   whiteOutline: {
     viewBox: "0 0 182.03 43.16",
     textColor: "#dcb42e",
+    hoverColor: "#afa9d2",
+    hoverText: "#f7f6f2",
     widthEm: 6.5,
     paths: [
       {
@@ -65,16 +76,18 @@ const SHAPES = {
   yellow: {
     viewBox: "0 0 157.55 74.6",
     textColor: "#f5f2f0",
+    hoverColor: "#afa9d2",
+    hoverText: "#f7f6f2",
     widthEm: 6,
     paths: [
       {
         d: "M109.55,68.05s-24.44,1.35-64.29,5.96S2.1,54.17,1.66,48.01s-4.4-23.34,1.76-29.94S17.07,1.99,46.36,2.65s40.29.42,54.17-1.55,40.51-4.83,52.84,26.65-5.36,52.98-17.47,45.28-26.34-4.98-26.34-4.98Z",
-        fill: "#dbb32f",
+        fill: "#e4b928",
       },
       {
         d: "M107.54,65s-22.84,1.18-60.07,5.19C10.23,74.21,7.14,52.92,6.73,47.55s-4.11-20.33,1.65-26.08c5.76-5.75,12.76-14,40.12-13.42,27.36.58,37.65.36,50.61-1.35s37.85-4.21,49.37,23.22c11.52,27.42-5.01,46.15-16.33,39.43s-24.61-4.34-24.61-4.34Z",
         fill: "none",
-        stroke: "#393552",
+        stroke: "#3d385c",
         strokeWidth: 3.61,
       },
     ],
@@ -91,6 +104,8 @@ export default function OrganicButton({
   disabled = false,
   onClick,
 }) {
+  const [hovered, setHovered] = useState(false);
+
   const shape = SHAPES[variant] || SHAPES.green;
 
   const sharedProps = {
@@ -99,6 +114,8 @@ export default function OrganicButton({
       fontSize,
       width: `${shape.widthEm}em`,
     },
+    onMouseEnter: () => setHovered(true),
+    onMouseLeave: () => setHovered(false),
   };
 
   const content = (
@@ -108,15 +125,31 @@ export default function OrganicButton({
           <path
             key={index}
             d={path.d}
-            fill={path.fill}
+            fill={
+              path.fill === "none"
+                ? "none"
+                : hovered
+                ? shape.hoverColor
+                : path.fill
+            }
             stroke={path.stroke}
             strokeWidth={path.strokeWidth}
             strokeMiterlimit="10"
+            style={{
+              transition: "fill 0.2s ease",
+            }}
           />
         ))}
       </svg>
 
-      <span className={styles.label} style={{ color: shape.textColor }}>
+      <span
+        className={styles.label}
+        style={{
+          color: hovered ? shape.hoverText : shape.textColor,
+          transition: "color 0.2s ease",
+        }}
+      >
+        {" "}
         {children}
       </span>
     </>

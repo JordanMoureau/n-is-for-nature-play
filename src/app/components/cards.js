@@ -38,10 +38,15 @@ export default function Cards({ variant }) {
 
             <p>{card.text}</p>
           </div>
-
-          <OrganicButton variant={variant} href={card.link} fontSize={"2.6rem"}>
-            {card.buttonText}
-          </OrganicButton>
+          <div className={styles.buttonplacement}>
+            <OrganicButton
+              variant={variant}
+              href={card.link}
+              fontSize={"2.6rem"}
+            >
+              {card.buttonText}
+            </OrganicButton>
+          </div>
         </div>
       ))}
     </div>

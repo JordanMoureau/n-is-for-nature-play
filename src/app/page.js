@@ -160,7 +160,7 @@ const midBoxes = [
     number: "#2",
     title: "Stronger Bodies",
     text: "Outdoor play builds balance, coordination, strength, confidence, and body awareness.",
-    altColor: true,
+    altColor: false,
   },
   {
     number: "#3",
@@ -175,7 +175,7 @@ const smallBoxes = [
     number: "#4",
     title: "Connection",
     text: "Children build relationships with each other, their caregivers, and the living world around them.",
-    altColor: true,
+    altColor: false,
   },
   {
     backgroundImage: "/kids-stick.jpeg",
@@ -185,7 +185,7 @@ const smallBoxes = [
     number: "#5",
     title: "Sensory",
     text: "Children build relationships with each other, their caregivers, and the living world around them.",
-    altColor: true,
+    altColor: false,
   },
 ];
 
@@ -312,6 +312,58 @@ export default function Home() {
           </p>
         </div>
         <TheGrid bigBox={bigBox} midBoxes={midBoxes} smallBoxes={smallBoxes} />
+      </div>
+
+      <div className={styles.aboutjena}>
+        <WaveTop wave={"#e4b928"} spacer={"#338e74"} />
+        <div className={styles.innerbubbles}>
+          <div className={styles.bubbleMain}>
+            <Image src="/jena-main.jpg" alt="" width={600} height={600} />
+          </div>
+
+          <div className={styles.bubbleTop}>
+            <Image src="/garden-detail.jpg" alt="" width={250} height={250} />
+          </div>
+
+          <div className={styles.bubbleBottom}>
+            <Image src="/hero.jpg" alt="" width={400} height={400} />
+          </div>
+
+          <div className={styles.bubbleRight}>
+            <Image
+              src="/girl-with-flower.jpg"
+              alt=""
+              width={250}
+              height={250}
+            />
+          </div>
+        </div>
+
+        <div className={styles.abouttext}>
+          <h3>Meet the designer behind the dirt</h3>
+          <h2>
+            Hi I'm Jenna -- landscape architect nature play expert,
+            artist-builder, garden fanatic, and mom of twins.
+          </h2>
+          <p>
+            I believe children deserve outdoor spaces that invite curiosity,
+            creativity, regulation, and joy. My work blends professional
+            landscape design with a deep understanding of sensory needs, child
+            development, and the magic that happens when kids are given room to
+            explore.
+          </p>
+
+          <p>
+            I help families, schools, and communities create nature play spaces
+            that are beautiful, practical, and rooted in the way children
+            actually play.
+          </p>
+          <div className={styles.bumper}>
+            <OrganicButton variant="yellow" fontSize={"2.2rem"}>
+              Meet Jena
+            </OrganicButton>
+          </div>
+        </div>
       </div>
 
       <ContactForm />

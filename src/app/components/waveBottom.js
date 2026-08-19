@@ -19,7 +19,7 @@ export default function WaveBottom({ wave = "#cdddc0", spacer = "#f7f6f2" }) {
         </svg>
       </div>
 
-      <motion.div
+      <div
         initial={{ y: 2 }}
         whileInView={{ y: 0 }}
         transition={{
@@ -42,7 +42,7 @@ export default function WaveBottom({ wave = "#cdddc0", spacer = "#f7f6f2" }) {
         >
           <path d={path} fill={spacer} />
         </svg>
-      </motion.div>
+      </div>
     </>
   );
 }
