@@ -8,10 +8,21 @@ export default function MainNav() {
     <div className={styles.header}>
       <div className={styles.nav}>
         <div className={styles.leftNav}>
-          <Link href="/">home</Link>
-          <Link href="/">design a space</Link>
-          <Link href="/">meet jena</Link>
-          <Link href="/">about nature play</Link>
+          <Link href="/">
+            <span>home</span>
+          </Link>
+
+          <Link href="/design-a-space">
+            <span>design a space</span>
+          </Link>
+
+          <Link href="/meet-jena">
+            <span>meet jena</span>
+          </Link>
+
+          <Link href="/about-nature-play">
+            <span>about nature play</span>
+          </Link>
         </div>
 
         <div className={styles.rightNav}>

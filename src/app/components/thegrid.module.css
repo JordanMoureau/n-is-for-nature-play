@@ -1,76 +1,87 @@
 .thegrid {
   position: relative;
   z-index: 40;
-  margin-top: 1rem;
+
+  width: 100%;
   max-width: 1200px;
+
+  margin-top: 1rem;
+  padding: 1rem;
+
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 1rem;
+
   color: var(--white);
   text-align: center;
+
   h2 {
     font-size: 4.7rem;
     line-height: 0.6;
   }
 
   p {
-    font-size: 1.5rem;
-    line-height: 01;
+    font-size: 1.2rem;
+    line-height: 1;
   }
 }
 
 .toprow {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 2.5rem;
 }
 
 .bigone {
+  flex: 1;
   min-height: 475px;
-  border-radius: 3rem;
-  overflow: hidden;
 }
 
 .doubles {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 
-.doubleone,
-.doubletwo {
-  min-height: 215px;
-  border-radius: 3rem;
-  overflow: hidden;
+.doubles > div {
+  flex: 1;
+  display: flex;
+}
+
+.midbox {
+  flex: 1;
+  width: 100%;
+  min-height: 220px;
 }
 
 .lowerrow {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 2.5rem;
 }
 
-.lowbox {
-  min-height: 100%;
-  border-radius: 3rem;
-  overflow: hidden;
+.lowerrow > div {
+  flex: 1;
+  display: flex;
 }
 
-.altColor {
-  background-color: var(--green);
+.lowbox {
+  flex: 1;
+  width: 100%;
+  min-height: 300px;
 }
 
 .bigone,
 .midbox,
 .lowbox {
-  padding: 1rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding: 1.5rem;
 
   border-radius: 3rem;
   overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   display: flex;
   flex-direction: column;
@@ -78,11 +89,8 @@
   align-items: center;
 }
 
-.lowbox img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.altColor {
+  background-color: var(--green);
 }
 
 .colorMain {
@@ -93,4 +101,89 @@
   font-family: var(--good-avocado);
   font-size: 10rem;
   line-height: 0.7;
+}
+
+@media (max-width: 900px) {
+  .thegrid {
+    max-width: 100%;
+
+    h2 {
+      font-size: 3.8rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
+
+  .toprow {
+    flex-direction: column;
+  }
+
+  .lowerrow {
+    flex-wrap: wrap;
+  }
+
+  .lowerrow > div {
+    flex: 1 1 calc(50% - 1.25rem);
+  }
+
+  .bigone {
+    min-height: 400px;
+  }
+
+  .number {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .thegrid {
+    gap: 1.25rem;
+    padding: 0.5rem;
+
+    h2 {
+      font-size: 3rem;
+      line-height: 0.75;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.2;
+    }
+  }
+
+  .toprow,
+  .doubles,
+  .lowerrow {
+    gap: 1.25rem;
+  }
+
+  .lowerrow {
+    flex-direction: column;
+  }
+
+  .lowerrow > div {
+    flex: none;
+    width: 100%;
+  }
+
+  .bigone {
+    min-height: 330px;
+  }
+
+  .midbox,
+  .lowbox {
+    min-height: 220px;
+  }
+
+  .bigone,
+  .midbox,
+  .lowbox {
+    border-radius: 2rem;
+  }
+
+  .number {
+    font-size: 6rem;
+  }
 }

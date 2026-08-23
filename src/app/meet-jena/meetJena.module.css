@@ -1,0 +1,451 @@
+.hero {
+  position: relative;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 1rem 12rem;
+  text-align: center;
+  z-index: 20;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+}
+
+.hero h1 {
+  margin: 0;
+  color: var(--purple);
+  font-family: var(--good-avocado);
+  font-size: 4rem;
+  line-height: 0.7;
+}
+
+.hero h1 span {
+  display: block;
+  margin-top: 0.8rem;
+  color: var(--yellow);
+  font-family: var(--bubblegum);
+  font-size: 5.5rem;
+  font-weight: 400;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: 1.5rem 0 2rem;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.intro {
+  position: relative;
+  z-index: 40;
+  background-color: var(--sage);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.introBox {
+  position: relative;
+  z-index: 41;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: -100px;
+  margin-bottom: -100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+
+  img {
+    flex-shrink: 0;
+    width: 500px;
+    height: 500px;
+    border: 10px solid var(--white);
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.introInner {
+  display: flex;
+  flex-direction: column;
+  max-width: 650px;
+  text-align: left;
+}
+
+.introInner h2 {
+  margin-bottom: 1rem;
+  color: var(--green);
+  font-size: 3.6rem;
+  line-height: 0.85;
+}
+
+.introInner p {
+  color: var(--green);
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.heroImage {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+}
+
+.heroImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story {
+  position: relative;
+  background-color: var(--green);
+  padding: 2rem 1rem 6rem;
+}
+
+.storyInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.storyText {
+  max-width: 900px;
+}
+
+.storyText h2 {
+  font-family: var(--bubblegum);
+  color: var(--sage);
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.storyText p {
+  color: var(--sage);
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+.grid {
+  padding: 15rem 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gridtop {
+  max-width: 900px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--yellow);
+
+  h2 {
+    font-family: var(--bubblegum);
+    font-size: 5.5rem;
+    line-height: 1;
+  }
+
+  p {
+    max-width: 700px;
+    font-size: 1.3rem;
+  }
+
+  .iconrow {
+    width: 120%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -75px;
+  }
+}
+
+.work {
+  position: relative;
+  background-color: var(--purple);
+  padding: 8rem 2rem 10rem;
+}
+
+.workInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.workText h2 {
+  margin: 0 0 1.5rem;
+  color: var(--white);
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.workText h2 span {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--yellow);
+  font-family: var(--bubblegum);
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
+.workText p {
+  max-width: 600px;
+  color: var(--white);
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.workImage {
+  overflow: hidden;
+  height: 600px;
+  border: 15px solid var(--white);
+  border-radius: 50% 50% 3rem 3rem / 22% 22% 8% 8%;
+}
+
+.workImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cta {
+  position: relative;
+  background-color: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9rem 1rem 10rem;
+  text-align: center;
+}
+
+.ctaInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 850px;
+}
+
+.ctaInner h2 {
+  margin: 0;
+  color: var(--green);
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.ctaInner h2 span {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--purple);
+  font-family: var(--bubblegum);
+  font-size: 4.8rem;
+  font-weight: 400;
+}
+
+.ctaInner p {
+  max-width: 650px;
+  margin: 1.5rem 0 2rem;
+  color: var(--green);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+@media (max-width: 1000px) {
+  .introBox {
+    flex-direction: column;
+    text-align: center;
+
+    img {
+      margin-top: -80px;
+    }
+  }
+
+  .introInner {
+    max-width: 100%;
+    text-align: center;
+    padding-bottom: 5rem;
+
+    h2 {
+      font-size: 4.5rem;
+    }
+  }
+
+  .workInner {
+    grid-template-columns: 1fr;
+  }
+
+  .workText {
+    text-align: center;
+  }
+
+  .workText p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .workImage {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1rem 10rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero h1 span {
+    font-size: 4rem;
+  }
+
+  .hero p {
+    font-size: 1.05rem;
+  }
+
+  .introBox {
+    img {
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  .introInner {
+    h2 {
+      font-size: 3.2rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  .heroImage {
+    height: 75vh;
+  }
+
+  .storyText h2 {
+    font-size: 3.5rem;
+  }
+
+  .grid {
+    padding: 11rem 1rem 3rem;
+  }
+
+  .gridtop {
+    h2 {
+      font-size: 4rem;
+    }
+
+    .iconrow {
+      width: 100%;
+      margin-top: -45px;
+    }
+  }
+
+  .work {
+    padding: 7rem 1rem 8rem;
+  }
+
+  .workText h2 {
+    font-size: 2.8rem;
+  }
+
+  .workText h2 span {
+    font-size: 3.6rem;
+  }
+
+  .workImage {
+    height: 500px;
+  }
+
+  .ctaInner h2 {
+    font-size: 2.8rem;
+  }
+
+  .ctaInner h2 span {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h1 span {
+    font-size: 3.2rem;
+  }
+
+  .introBox {
+    img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  .introInner {
+    h2 {
+      font-size: 2.6rem;
+    }
+  }
+
+  .heroImage {
+    height: 60vh;
+  }
+
+  .storyText h2 {
+    font-size: 3rem;
+  }
+
+  .gridtop {
+    h2 {
+      font-size: 3.2rem;
+    }
+  }
+
+  .workText h2 {
+    font-size: 2.4rem;
+  }
+
+  .workText h2 span {
+    font-size: 3rem;
+  }
+
+  .workImage {
+    height: 400px;
+  }
+
+  .cta {
+    padding: 7rem 1rem 8rem;
+  }
+
+  .ctaInner h2 {
+    font-size: 2.3rem;
+  }
+
+  .ctaInner h2 span {
+    font-size: 3rem;
+  }
+}

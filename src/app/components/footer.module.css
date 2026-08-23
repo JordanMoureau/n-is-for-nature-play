@@ -101,6 +101,12 @@
 .socials img {
   width: clamp(38px, 3vw, 50px);
   height: auto;
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.socials img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
 }
 
 .contactButton,

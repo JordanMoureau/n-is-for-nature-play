@@ -1,0 +1,342 @@
+.hero {
+  position: relative;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 1rem 12rem;
+  text-align: center;
+  z-index: 20;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+}
+
+.hero h1 {
+  margin: 0;
+  color: var(--purple);
+  font-family: var(--good-avocado);
+  font-size: 4rem;
+  line-height: 0.65;
+}
+
+.hero h1 span {
+  display: block;
+  margin-top: 0.8rem;
+  color: var(--yellow);
+  font-family: var(--bubblegum);
+  font-size: 6rem;
+  font-weight: 400;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+.intro {
+  position: relative;
+  z-index: 40;
+  background-color: var(--sage);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.introBox {
+  position: relative;
+  z-index: 41;
+  max-width: 1200px;
+  margin-top: -100px;
+  margin-bottom: -100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+
+  img {
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 10px solid var(--white);
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+  }
+}
+
+.introInner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 650px;
+  text-align: left;
+}
+
+.introInner h2 {
+  color: var(--green);
+  font-size: 3.6rem;
+  line-height: 0.8;
+}
+
+.introInner p {
+  color: var(--green);
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.grid {
+  padding: 15rem 2rem 0rem;
+  margin-bottom: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gridtop {
+  max-width: 900px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--yellow);
+  h2 {
+    font-family: var(--bubblegum);
+    font-size: 5.5rem;
+  }
+  p {
+    max-width: 650px;
+    font-size: 1.3rem;
+  }
+
+  .iconrow {
+    width: 120%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: -75px;
+  }
+}
+
+.heroImage {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+}
+
+.heroImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story {
+  position: relative;
+  background-color: var(--green);
+  padding: 1rem;
+}
+
+.storyInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 4rem;
+  text-align: center;
+}
+
+.storyText {
+  max-width: 900px;
+}
+
+.storyText h2 {
+  font-family: var(--bubblegum);
+  color: var(--sage);
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.storyText p {
+  color: var(--sage);
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 20;
+  width: 100%;
+}
+
+.cardsBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: -150px;
+}
+
+.card {
+  position: relative;
+  z-index: 21;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 440px;
+  padding: 2rem 1rem 1rem;
+  background: var(--sage);
+  border-radius: 50% 50% 3rem 3rem / 22% 22% 8% 8%;
+  text-align: center;
+}
+
+.cardIcon {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.inner {
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card h3 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-family: var(--good-avocado);
+  font-weight: 600;
+}
+
+.card p {
+  max-width: 290px;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.buttonplacement {
+  margin-bottom: -60px;
+}
+
+.approach {
+  background-color: var(--white);
+  padding: 10rem 2rem;
+}
+
+.approachHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 850px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.approachHeader h2 {
+  margin: 0;
+  color: var(--green);
+  font-family: var(--bubblegum);
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+.approachHeader p {
+  max-width: 700px;
+  color: var(--green);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.iconrow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -50px;
+}
+
+@media screen and (max-width: 1120px) {
+  .cards {
+    height: fit-content;
+  }
+
+  .cardsBox {
+    margin-top: -150px;
+    margin-bottom: -150px;
+    padding: 0 3rem;
+  }
+
+  .card {
+    width: 100%;
+    border-radius: 3rem;
+    height: fit-content;
+  }
+
+  .buttonplacement {
+    margin-bottom: 20px;
+  }
+
+  .card p {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .introBox {
+    flex-direction: column;
+    text-align: center;
+
+    img {
+      margin-top: -80px;
+    }
+  }
+
+  .introInner {
+    max-width: 100%;
+    text-align: center;
+    padding-bottom: 5rem;
+
+    h2 {
+      font-size: 4.5rem;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .storyText {
+    text-align: center;
+  }
+
+  .storyText h2,
+  .storyText p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cardsBox {
+    margin-top: -100px;
+    margin-bottom: -100px;
+    padding: 0 1rem;
+  }
+
+  .card p {
+    max-width: 100%;
+  }
+}

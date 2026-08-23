@@ -46,15 +46,11 @@
 }
 
 .leaf {
-  color: var(--green);
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  transform: rotate(-25deg);
+  width: 4rem;
 }
 
 .pencil {
-  color: var(--purple);
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  transform: rotate(-12deg);
+  width: 3rem;
 }
 
 .header p {
@@ -174,14 +170,94 @@
   }
 
   .inner {
+    width: min(calc(100% - 2rem), 68rem);
     padding: 3.5rem 0 5rem;
+  }
+
+  .header {
+    margin-bottom: 2rem;
   }
 
   .titleRow {
     gap: 0.4rem;
   }
 
+  .titleRow h2 {
+    font-size: clamp(4.5rem, 12vw, 5.5rem);
+  }
+
+  .header p {
+    font-size: 1.05rem;
+  }
+
   .fieldRow {
     flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  .field input {
+    min-height: 3.8rem;
+  }
+
+  .field textarea {
+    min-height: 12rem;
+  }
+
+  .field input::placeholder,
+  .field textarea::placeholder {
+    font-size: 2rem;
+  }
+
+  .messageField {
+    margin-top: 1.4rem;
+  }
+
+  .submitRow {
+    margin-top: 2rem;
+  }
+
+  .pencil {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    margin-top: 3.5rem;
+  }
+
+  .inner {
+    width: calc(100% - 1.5rem);
+    padding: 3rem 0 4rem;
+  }
+
+  .header {
+    margin-bottom: 1.5rem;
+  }
+
+  .titleRow h2 {
+    font-size: 2.8rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .field input {
+    padding: 0.8rem 1rem;
+  }
+
+  .field textarea {
+    min-height: 10rem;
+    padding: 1rem;
+  }
+
+  .field input::placeholder,
+  .field textarea::placeholder {
+    font-size: 1.7rem;
+  }
+
+  .submitRow {
+    justify-content: center;
   }
 }

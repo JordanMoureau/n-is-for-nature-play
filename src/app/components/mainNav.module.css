@@ -23,9 +23,25 @@
 }
 
 .leftNav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+
   font-weight: 900;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.leftNav a span {
+  display: inline-block;
+}
+
+.leftNav a:hover span {
+  font-family: var(--bubblegum);
+  text-transform: none;
+  font-weight: 200;
+  font-size: 2rem;
 }
 
 .rightNav {
@@ -58,6 +74,36 @@
   font-size: 2rem;
   transform: rotate(-3deg) translateY(-0.08em);
   transform-origin: center;
+  line-height: 1.2;
+}
+
+.courses a {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0rem;
+  transition: all 0.4s ease;
+}
+
+.courses a:hover {
+  scale: 1.05;
+  color: var(--purple);
+}
+
+.courses a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: var(--purple);
+  border-radius: 999px;
+  transform: translateX(-50%);
+  transition: width 0.4s ease;
+}
+
+.courses a:hover::after {
+  width: 100%;
 }
 
 .socialLinks {
@@ -71,6 +117,12 @@
   align-items: center;
   justify-content: center;
   line-height: 0;
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.socialLink:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
 }
 
 .socialIcon {

@@ -267,7 +267,6 @@ export default function Home() {
       <Cards variant={"white"} />
 
       <section className={styles.naturePlaySection}>
-        <WaveTop wave={"#338e74"} spacer={"#3d385c"} />
         <div className={styles.naturePlayContent}>
           <h2>
             Nature Play Spaces for Homes, Schools,

@@ -1,6 +1,7 @@
 import styles from "./cards.module.css";
 import OrganicButton from "./organicButton";
 import WaveTop from "./waveTop";
+import WaveBottom from "./waveBottom";
 
 const cardContent = [
   {
@@ -30,25 +31,28 @@ export default function Cards({ variant }) {
   return (
     <div className={styles.cards}>
       <WaveTop wave={"#afa9d2"} spacer={"#f7f6f2"} />
-      {cardContent.map((card) => (
-        <div className={styles.card} key={card.title}>
-          <img src={card.icon} alt="" className={styles.cardIcon} />
-          <div className={styles.inner}>
-            <h3>{card.title}</h3>
+      <WaveBottom wave={"#f7f6f2"} spacer={"#338e74"} />
+      <div className={styles.cardsBox}>
+        {cardContent.map((card) => (
+          <div className={styles.card} key={card.title}>
+            <img src={card.icon} alt="" className={styles.cardIcon} />
+            <div className={styles.inner}>
+              <h3>{card.title}</h3>
 
-            <p>{card.text}</p>
+              <p>{card.text}</p>
+            </div>
+            <div className={styles.buttonplacement}>
+              <OrganicButton
+                variant={variant}
+                href={card.link}
+                fontSize={"2.6rem"}
+              >
+                {card.buttonText}
+              </OrganicButton>
+            </div>
           </div>
-          <div className={styles.buttonplacement}>
-            <OrganicButton
-              variant={variant}
-              href={card.link}
-              fontSize={"2.6rem"}
-            >
-              {card.buttonText}
-            </OrganicButton>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

@@ -4,19 +4,21 @@ import LeafOne from "./leafOne";
 import PencilIcon from "./pencilIcon";
 import WaveTop from "./waveTop";
 
-export default function ContactForm() {
+export default function ContactForm({ Top }) {
   return (
     <section className={styles.section}>
-      <WaveTop />
+      <WaveTop wave={Top} />
 
       <div className={styles.inner}>
         <header className={styles.header}>
           <div className={styles.titleRow}>
-            <LeafOne />
+            <div className={styles.leaf}>
+              <LeafOne />
+            </div>
 
             <h2>Work With Jena</h2>
 
-            <span className="pencilIcon" aria-hidden="true">
+            <span className={styles.pencil} aria-hidden="true">
               <PencilIcon />
             </span>
           </div>
