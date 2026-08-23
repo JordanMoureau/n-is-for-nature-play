@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6rem 1rem 12rem;
+  padding: 6rem 1rem 2rem;
   text-align: center;
   z-index: 20;
 }
@@ -29,7 +29,7 @@
   margin-top: 0.8rem;
   color: var(--yellow);
   font-family: var(--bubblegum);
-  font-size: 6rem;
+  font-size: 4.6rem;
   font-weight: 400;
 }
 
@@ -38,6 +38,23 @@
   margin: 1.5rem 0 2rem;
   font-size: 1.1rem;
   line-height: 1.4;
+}
+
+.heroImage {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 110vh;
+  background-color: var(--yellow);
+  overflow: hidden;
+}
+
+.heroImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  opacity: 0.75;
 }
 
 .intro {
@@ -93,22 +110,9 @@
   line-height: 1.2;
 }
 
-.heroImage {
-  position: relative;
-  z-index: -1;
-  width: 100%;
-  height: 100vh;
-}
-
-.heroImage img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .story {
   position: relative;
-  background-color: var(--green);
+  background-color: var(--yellow);
   padding: 1rem;
 }
 
@@ -118,7 +122,7 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  gap: 4rem;
+  gap: 1rem;
   text-align: center;
 }
 
@@ -127,14 +131,14 @@
 }
 
 .storyText h2 {
-  font-family: var(--bubblegum);
-  color: var(--sage);
+  font-family: var(--good-avocado);
+  color: var(--green);
   font-size: 4.5rem;
-  line-height: 1;
+  line-height: 0.75;
 }
 
 .storyText p {
-  color: var(--sage);
+  color: var(--white);
   font-size: 1.1rem;
   line-height: 1.4;
 }
@@ -154,7 +158,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  margin-bottom: -150px;
+  margin-bottom: -200px;
 }
 
 .card {
@@ -244,7 +248,7 @@
 
 .cta {
   position: relative;
-  background-color: var(--purple);
+  background-color: var(--lavender);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -262,16 +266,16 @@
 .ctaInner h2 {
   margin: 0;
   color: var(--white);
-  font-size: 3.5rem;
-  line-height: 1;
+  font-size: 4.5rem;
+  line-height: 0.75;
 }
 
 .ctaInner h2 span {
   display: block;
   margin-top: 0.5rem;
-  color: var(--yellow);
+  color: var(--green);
   font-family: var(--bubblegum);
-  font-size: 4.8rem;
+  font-size: 6.8rem;
   font-weight: 400;
 }
 

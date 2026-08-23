@@ -19,24 +19,9 @@ export default function WaveBottom({ wave = "#cdddc0", spacer = "#f7f6f2" }) {
         </svg>
       </div>
 
-      <div
-        initial={{ y: 2 }}
-        whileInView={{ y: 0 }}
-        transition={{
-          type: "spring",
-          stiffness: 120,
-          damping: 1,
-          mass: 0.8,
-        }}
-        viewport={{
-          once: true,
-          amount: 0.7,
-        }}
-        className={styles.waveBottomBorder}
-        aria-hidden="true"
-      >
+      <div className={styles.waveBottomBorder} aria-hidden="true">
         <svg
-          viewBox="0 270 766.53 94"
+          viewBox="0 270 766.53 96"
           preserveAspectRatio="none"
           xmlns="http://www.w3.org/2000/svg"
         >

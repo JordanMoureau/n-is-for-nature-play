@@ -6,6 +6,7 @@ import WaveBottom from "../components/waveBottom";
 import OrganicButton from "../components/organicButton";
 import ContactForm from "../components/contactForm";
 import TheGrid from "../components/theGrid";
+import Arrows from "../components/arrows";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
@@ -124,37 +125,45 @@ const processCards = [
 ];
 
 const bigBox = {
-  title: "Families",
-  text: "You want a backyard that gives your children more room to move, imagine, explore, regulate, and settle into real play.",
-  backgroundImage: "/kids-leaf.jpeg",
+  number: "#1",
+  title: "Tell Jena About Your Space",
+  text: "Share what you are working with, who the space is for, what is not working now, and what you would love for the space to become.",
+  backgroundImage: "/kids-stick.jpeg",
 };
 
 const midBoxes = [
   {
-    title: "Schools & Childcare",
-    text: "You want an outdoor environment that supports learning, movement, sensory needs, creativity, and child-led discovery.",
-    altColor: true,
+    number: "#2",
+    title: "Explore the Possibilities",
+    text: "Jena helps you look at the space through a nature-play lens, considering movement, sensory needs, imagination, gathering, and the way children naturally use outdoor environments.",
+    altColor: false,
   },
+
   {
-    title: "Parks & Communities",
-    text: "You want a public space that invites families to gather, explore, move, play, and connect with the natural world.",
-    backgroundImage: "/garden-detail.jpg",
+    number: "#3",
+    title: "Shape the Vision",
+    text: "Together, you narrow the possibilities into a thoughtful direction that fits your space, your goals, and the children who will actually be using it.",
+    backgroundImage: "/watercolor-two.png",
   },
 ];
 
 const smallBoxes = [
   {
-    title: "You Have a Vision",
-    text: "You know the space could be more, but you need help turning scattered ideas into one cohesive plan.",
-    altColor: true,
+    number: "#4",
+    title: "Design the Space",
+    text: "Jena brings the ideas together into a cohesive design, giving you a clear plan for how the different areas, materials, and play opportunities can work together.",
+    altColor: false,
   },
+
   {
-    backgroundImage: "/girl-with-flower.jpg",
+    backgroundImage: "/kids-leaf.jpeg",
     alt: "Child exploring flowers in a nature play space",
   },
+
   {
-    title: "You Need a Starting Point",
-    text: "You do not need to have everything figured out before reaching out. That is part of the process.",
+    number: "#5",
+    title: "Bring It to Life",
+    text: "With your design in hand, you have a practical starting point for creating a natural play space that feels intentional, inviting, and made for real childhood.",
     altColor: false,
   },
 ];
@@ -184,41 +193,12 @@ export default function DesignASpacePage() {
       </section>
 
       <section className={styles.intro}>
-        <WaveTop wave="#e4b928" spacer="#cbdcbe" />
-
-        <div className={styles.introBox}>
-          <Image
-            src="/jena-main.jpg"
-            alt="Jena, nature play designer and landscape architect"
-            width={1000}
-            height={1000}
-            priority
-          />
-
-          <div className={styles.introInner}>
-            <h2>You already have the space. It just needs a better plan.</h2>
-
-            <p>
-              Maybe your yard feels empty. Maybe your school playground is all
-              equipment and nowhere to explore. Maybe you know you want gardens,
-              sensory play, climbing, digging, loose parts, and quiet spaces —
-              but you do not know how to make all of it work together.
-            </p>
-
-            <p>
-              That is where I come in. I help turn the space you already have
-              into a thoughtful outdoor environment built around the children
-              who actually use it.
-            </p>
-          </div>
-        </div>
-
-        <WaveBottom wave="#cbdcbe" spacer="#338e74" />
+        <WaveBottom wave="#f7f6f2" spacer="#338e74" />
       </section>
 
       <section className={styles.heroImage}>
         <Image
-          src="/abouthero.png"
+          src="/watercolor-one.png"
           alt="Children exploring a natural outdoor play environment"
           width={1400}
           height={900}
@@ -227,7 +207,7 @@ export default function DesignASpacePage() {
       </section>
 
       <section className={styles.story} id="process">
-        <WaveTop wave="#e4b928" spacer="#338e74" />
+        <WaveTop wave="#338e74" spacer="#e4b928" />
 
         <div className={styles.storyInner}>
           <div className={styles.storyText}>
@@ -239,21 +219,10 @@ export default function DesignASpacePage() {
             <p>
               Good nature play design creates opportunities for movement,
               sensory exploration, imagination, connection, regulation,
-              discovery, and rest.
-            </p>
-
-            <p>
-              Every project begins with the site, the children, and the people
-              responsible for caring for it. The goal is not to fill the space
-              with more stuff. It is to make the space itself invite play.
-            </p>
-          </div>
-
-          <div className={styles.processHeading}>
-            <h3>How it works</h3>
-            <p>
-              You do not need a finished vision before you reach out. We build
-              that together.
+              discovery, and rest. Every project begins with the site, the
+              children, and the people responsible for caring for it. The goal
+              is not to fill the space with more stuff. It is to make the space
+              itself invite play.
             </p>
           </div>
 
@@ -273,23 +242,13 @@ export default function DesignASpacePage() {
                     <h3>{card.title}</h3>
                     <p>{card.text}</p>
                   </div>
-
-                  <div className={styles.buttonplacement}>
-                    <OrganicButton
-                      variant="yellowPlain"
-                      href={card.link}
-                      fontSize={"2.4rem"}
-                    >
-                      {card.buttonText}
-                    </OrganicButton>
-                  </div>
                 </div>
               ))}
             </div>
           </div>
         </div>
 
-        <WaveBottom wave="#338e74" spacer="#e4b928" />
+        <WaveBottom wave="#e4b928" spacer="#338e74" />
       </section>
 
       <section className={styles.grid} id="who-we-work-with">
@@ -311,12 +270,12 @@ export default function DesignASpacePage() {
       </section>
 
       <section className={styles.cta}>
-        <WaveTop wave="#e4b928" spacer="#afa9d2" />
+        <WaveTop wave="#338e74" spacer="#afa9d2" />
 
         <div className={styles.ctaInner}>
           <h2>
-            Ready to see what your space
-            <span>could become?</span>
+            Ready to see what your
+            <span>space could become?</span>
           </h2>
 
           <p>
@@ -324,10 +283,7 @@ export default function DesignASpacePage() {
             wish it could do better. You do not need a perfect plan before you
             reach out.
           </p>
-
-          <OrganicButton variant="yellow" href="#contact" fontSize={"2.6rem"}>
-            Start a Design Project
-          </OrganicButton>
+          <Arrows />
         </div>
       </section>
 
@@ -336,4 +292,39 @@ export default function DesignASpacePage() {
       </div>
     </main>
   );
+}
+
+{
+  /* <section className={styles.intro}>
+<WaveTop wave="#e4b928" spacer="#cbdcbe" />
+
+<div className={styles.introBox}>
+  <Image
+    src="/jena-main.jpg"
+    alt="Jena, nature play designer and landscape architect"
+    width={1000}
+    height={1000}
+    priority
+  />
+
+  <div className={styles.introInner}>
+    <h2>You already have the space. It just needs a better plan.</h2>
+
+    <p>
+      Maybe your yard feels empty. Maybe your school playground is all
+      equipment and nowhere to explore. Maybe you know you want gardens,
+      sensory play, climbing, digging, loose parts, and quiet spaces —
+      but you do not know how to make all of it work together.
+    </p>
+
+    <p>
+      That is where I come in. I help turn the space you already have
+      into a thoughtful outdoor environment built around the children
+      who actually use it.
+    </p>
+  </div>
+</div>
+
+<WaveBottom wave="#cbdcbe" spacer="#338e74" />
+</section> */
 }

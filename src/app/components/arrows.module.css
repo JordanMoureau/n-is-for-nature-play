@@ -1,0 +1,16 @@
+.ctacta {
+  font-family: var(--good-avocado);
+  color: var(--green);
+  font-size: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.arrow {
+  font-size: 6rem;
+  font-weight: 100;
+  line-height: 1;
+}

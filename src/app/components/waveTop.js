@@ -35,7 +35,7 @@ export default function WaveTop({ spacer = "#cbdcbe", wave = "#f7f6f2" }) {
       </div>
       <div className={styles.wave} aria-hidden="true">
         <svg
-          viewBox="0 0 766.53 80"
+          viewBox="0 0 766.53 86"
           preserveAspectRatio="none"
           xmlns="http://www.w3.org/2000/svg"
         >
