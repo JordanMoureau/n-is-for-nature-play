@@ -91,3 +91,19 @@ select {
   width: 2.5rem;
   height: auto;
 }
+
+button {
+  appearance: none;
+  -webkit-appearance: none;
+
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  background: none;
+  color: inherit;
+
+  font: inherit;
+
+  cursor: pointer;
+}
