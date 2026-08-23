@@ -44,7 +44,7 @@
   position: relative;
   z-index: -1;
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   background-color: var(--yellow);
   overflow: hidden;
 }
@@ -99,7 +99,7 @@
 
 .introInner h2 {
   margin-bottom: 1rem;
-  color: var(--green);
+  color: var(--white);
   font-size: 3.6rem;
   line-height: 0.8;
 }
@@ -167,7 +167,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   width: 350px;
   height: 440px;
   padding: 2rem 1rem 1rem;
@@ -225,7 +224,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  color: var(--yellow);
+  color: var(--green);
 
   h2 {
     font-family: var(--bubblegum);
