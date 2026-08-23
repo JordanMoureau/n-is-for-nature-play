@@ -129,12 +129,14 @@
   z-index: -1;
   width: 100%;
   height: 100vh;
+  background-color: var(--yellow);
 }
 
 .heroImage img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.75;
 }
 
 .story {

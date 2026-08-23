@@ -108,8 +108,8 @@
 
 .story {
   position: relative;
-  background-color: var(--green);
-  padding: 2rem 1rem 6rem;
+  background-color: var(--white);
+  padding: 1rem 1rem 1rem;
 }
 
 .storyInner {
@@ -127,62 +127,27 @@
 
 .storyText h2 {
   font-family: var(--bubblegum);
-  color: var(--sage);
+  color: var(--yellow);
   font-size: 4.5rem;
   line-height: 1;
 }
 
 .storyText p {
-  color: var(--sage);
+  color: var(--purple);
   font-size: 1.15rem;
   line-height: 1.4;
-}
-
-.grid {
-  padding: 15rem 2rem 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.gridtop {
-  max-width: 900px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  color: var(--yellow);
-
-  h2 {
-    font-family: var(--bubblegum);
-    font-size: 5.5rem;
-    line-height: 1;
-  }
-
-  p {
-    max-width: 700px;
-    font-size: 1.3rem;
-  }
-
-  .iconrow {
-    width: 120%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: -75px;
-  }
 }
 
 .work {
   position: relative;
   background-color: var(--purple);
-  padding: 8rem 2rem 10rem;
+  padding: 10rem 2rem 8rem;
+  z-index: -1;
 }
 
 .workInner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   gap: 4rem;
   max-width: 1200px;
@@ -192,12 +157,14 @@
 .workText h2 {
   margin: 0 0 1.5rem;
   color: var(--white);
-  font-size: 3.5rem;
-  line-height: 1;
+  font-size: 3rem;
+  line-height: 0.75;
 }
 
 .workText h2 span {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-top: 0.5rem;
   color: var(--yellow);
   font-family: var(--bubblegum);
@@ -227,12 +194,14 @@
 
 .cta {
   position: relative;
-  background-color: var(--yellow);
+  background-color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 9rem 1rem 10rem;
+  padding: 11rem 1rem 8rem;
   text-align: center;
+  margin-top: 30px;
+  z-index: -1;
 }
 
 .ctaInner {
@@ -245,16 +214,16 @@
 .ctaInner h2 {
   margin: 0;
   color: var(--green);
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   line-height: 1;
 }
 
 .ctaInner h2 span {
   display: block;
   margin-top: 0.5rem;
-  color: var(--purple);
+  color: var(--yellow);
   font-family: var(--bubblegum);
-  font-size: 4.8rem;
+  font-size: 6.8rem;
   font-weight: 400;
 }
 
@@ -265,6 +234,108 @@
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.4;
+}
+
+.aboutjena {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  background-color: var(--green);
+  margin-top: 50px;
+  padding: 3rem 1rem 0rem 1rem;
+
+  h3 {
+    text-transform: uppercase;
+    color: var(--white);
+    max-width: 700px;
+    font-size: 1.8rem;
+    font-weight: 900;
+  }
+
+  h2 {
+    color: var(--yellow);
+    max-width: 700px;
+    font-size: 3.4rem;
+    margin-top: 1rem;
+  }
+  p {
+    color: var(--white);
+    max-width: 700px;
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+}
+
+.abouttext {
+  position: relative;
+  z-index: 40;
+  margin-top: -80px;
+}
+
+.innerbubbles {
+  position: relative;
+  max-width: 600px;
+  min-height: 650px;
+  margin-top: -200px;
+  margin-bottom: -100px;
+  z-index: 40;
+}
+
+.bubbleMain,
+.bubbleTop,
+.bubbleBottom,
+.bubbleRight {
+  position: absolute;
+  overflow: hidden;
+  border: 15px solid white;
+  border-radius: 50%;
+}
+
+.bubbleMain {
+  width: 75%;
+  aspect-ratio: 1;
+  top: 10%;
+  left: 10%;
+}
+
+.bubbleTop {
+  width: 30%;
+  aspect-ratio: 1;
+  top: 3%;
+  left: 0%;
+}
+
+.bubbleBottom {
+  width: 40%;
+  aspect-ratio: 1;
+  bottom: -10;
+  left: 0;
+}
+
+.bubbleRight {
+  width: 35%;
+  aspect-ratio: 1;
+  bottom: 10%;
+  right: 5%;
+}
+
+.innerbubbles img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1300px) {
+  .aboutjena {
+    padding: 3rem 6rem 7rem 6rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .aboutjena {
+    padding: 3rem 10rem 7rem 10rem;
+  }
 }
 
 @media (max-width: 1000px) {

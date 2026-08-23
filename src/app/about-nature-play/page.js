@@ -211,7 +211,7 @@ export default function AboutNaturePlayPage() {
         <WaveTop wave="#e4b928" spacer="#cbdcbe" />
         <div className={styles.introBox}>
           <Image
-            src="/jena-main.jpg"
+            src="/abouthero.png"
             alt="Jena, founder of N Is for Nature Play"
             width={1400}
             height={900}
@@ -233,7 +233,7 @@ export default function AboutNaturePlayPage() {
 
       <section className={styles.heroImage}>
         <Image
-          src="/abouthero.png"
+          src="/watercolor-two.png"
           alt="Jena, founder of N Is for Nature Play"
           width={1400}
           height={900}
