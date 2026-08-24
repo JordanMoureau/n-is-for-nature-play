@@ -213,14 +213,11 @@
 
 .postContent {
   flex: 1;
-
   padding: 3rem;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-
   color: var(--green);
 }
 

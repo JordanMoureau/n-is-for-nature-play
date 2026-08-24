@@ -4,8 +4,7 @@ export const posts = [
     excerpt:
       "Jena joins Ryann Watkin for a conversation about the child-nature connection, sensory-based play, neurodiversity, and why outdoor experiences matter so deeply for developing children.",
     image: "/kids-leaf.jpeg",
-    href: "/podcast-conversation-with-ryann-watkin-at-raising-wild-hearts/",
-    type: "Podcast",
+    href: "/blog/posts/podcast-conversation-with-ryann-watkin-at-raising-wild-hearts/",
   },
 
   {
@@ -13,8 +12,7 @@ export const posts = [
     excerpt:
       "A conversation about nature, parenting, sensory-rich play, and the role the natural world can have in helping adults and children live fuller, more connected lives.",
     image: "/garden-detail.jpg",
-    href: "/podcast-conversation-with-mel-findlater-at-permission-to-be-human/",
-    type: "Podcast",
+    href: "/blog/posts/podcast-conversation-with-mel-findlater-at-permission-to-be-human/",
   },
 
   {
@@ -22,8 +20,23 @@ export const posts = [
     excerpt:
       "Explore all seven sensory systems and learn how thoughtful nature play environments can support regulation, learning, connection, and neurodiverse children.",
     image: "/watercolor-two.png",
-    href: "/free-webinar-inclusive-sensory-rich-nature-play-for-childrens-7-senses/",
-    type: "Webinar",
+    href: "/blog/posts/free-webinar-inclusive-sensory-rich-nature-play-for-childrens-7-senses/",
+  },
+
+  {
+    title: "Podcast Conversation/Video with Andrew Bartolotta at CityCURRENT",
+    excerpt:
+      "A conversation about sensory-rich nature play, children’s seven sensory systems, backyard playscapes, and how outdoor environments support holistic child development.",
+    image: "/kids-stick.jpeg",
+    href: "/blog/posts/podcast-conversation-video-citycurrent-with-andrew-bartolotta/",
+  },
+
+  {
+    title: "Podcast Conversation with Victoria Hackett at Outdoor Classrooms",
+    excerpt:
+      "A conversation about outdoor learning, sensory-rich nature play, easy DIY sensory features, and the magic of childhood connection.",
+    image: "/garden-detail.jpg",
+    href: "/blog/posts/podcast-conversation-outdoor-classrooms-with-victoria-hackett/",
   },
 
   {
@@ -31,8 +44,7 @@ export const posts = [
     excerpt:
       "Climbing, gardening, pushing, pulling, carrying, balancing, and loose-parts play all give children valuable body-awareness input.",
     image: "/kids-stick.jpeg",
-    href: "/nature-play-and-our-proprioceptive-system/",
-    type: "7 Senses",
+    href: "/blog/posts/nature-play-and-our-proprioceptive-system/",
   },
 
   {
@@ -40,8 +52,7 @@ export const posts = [
     excerpt:
       "Birdsong, rustling leaves, splashing water, conversation, music, and even quiet all shape children's sensory experiences.",
     image: "/girl-with-flower.jpg",
-    href: "/nature-play-and-our-sense-of-sound/",
-    type: "7 Senses",
+    href: "/blog/posts/nature-play-and-our-sense-of-sound/",
   },
 
   {
@@ -49,8 +60,23 @@ export const posts = [
     excerpt:
       "Swinging, spinning, balancing, jumping, crawling, and climbing help children understand movement and gravity while developing the vestibular system.",
     image: "/watercolor-one.png",
-    href: "/nature-play-and-our-vestibular-system/",
-    type: "7 Senses",
+    href: "/blog/posts/nature-play-and-our-vestibular-system/",
+  },
+
+  {
+    title: "Nature Play and Our Sense of Smell",
+    excerpt:
+      "Flowers, soil, herbs, compost, animals, and fragrant plants give children rich opportunities to explore memory, emotion, language, and the natural world through scent.",
+    image: "/girl-with-flower.jpg",
+    href: "/blog/posts/nature-play-and-our-sense-of-smell/",
+  },
+
+  {
+    title: "Nature Play and the Sense of Taste",
+    excerpt:
+      "Edible gardens, herbs, berries, vegetables, flowers, and foraging give children playful ways to explore flavor, language, curiosity, and positive connections with food.",
+    image: "/garden-detail.jpg",
+    href: "/blog/posts/nature-play-and-the-sense-of-taste/",
   },
 
   {
@@ -58,8 +84,7 @@ export const posts = [
     excerpt:
       "Texture, temperature, pressure, plants, water, sand, loose parts, and mud all give children opportunities to explore their tactile system through play.",
     image: "/garden-detail.jpg",
-    href: "/nature-play-and-the-sense-of-touch/",
-    type: "7 Senses",
+    href: "/blog/posts/nature-play-and-the-sense-of-touch/",
   },
 
   {
@@ -67,8 +92,7 @@ export const posts = [
     excerpt:
       "Color, movement, pattern, texture, flowers, insects, water, and changing seasons make nature an endlessly rich visual environment for children.",
     image: "/girl-with-flower.jpg",
-    href: "/nature-play-and-the-sense-of-sight/",
-    type: "7 Senses",
+    href: "/blog/posts/nature-play-and-the-sense-of-sight/",
   },
 
   {
@@ -76,8 +100,7 @@ export const posts = [
     excerpt:
       "Children are constantly having an unspoken conversation with their environment. Their senses are the language they use to understand what a space offers them.",
     image: "/kids-leaf.jpeg",
-    href: "/the-language-of-the-senses/",
-    type: "Sensory Play",
+    href: "/blog/posts/the-language-of-the-senses/",
   },
 
   {
@@ -85,8 +108,7 @@ export const posts = [
     excerpt:
       "Children understand the world through seven sensory systems. Nature-rich play gives those systems the varied experiences they need to develop and grow.",
     image: "/watercolor-two.png",
-    href: "/nature-play-for-the-7-senses/",
-    type: "7 Senses",
+    href: "/blog/posts/nature-play-for-the-7-senses/",
   },
 
   {
@@ -94,8 +116,7 @@ export const posts = [
     excerpt:
       "Meet Jena and the heart behind N Is for Nature Play: creating sensory-rich natural play and learning environments where children of all abilities can blossom.",
     image: "/jena-main.jpg",
-    href: "/hello-world/",
-    type: "From Jena",
+    href: "/blog/posts/welcome-to-nature-play/",
   },
 
   {
@@ -103,7 +124,6 @@ export const posts = [
     excerpt:
       "A simple morning in the sensory garden becomes a tiny world of ladybugs, slugs, plants, imagination, and the kind of nature connection children notice better than adults.",
     image: "/kids-stick.jpeg",
-    href: "/ladybug-bridges-and-other-magic/",
-    type: "Nature Play",
+    href: "/blog/posts/ladybug-bridges-and-other-magic/",
   },
 ];

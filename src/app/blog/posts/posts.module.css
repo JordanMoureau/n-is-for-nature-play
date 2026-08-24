@@ -1,0 +1,460 @@
+.hero {
+  position: relative;
+  z-index: 20;
+
+  background-color: var(--white);
+  padding: 4rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.heroInner {
+  width: 100%;
+  max-width: 950px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back {
+  align-self: flex-start;
+  margin-bottom: 1rem;
+  color: var(--yellow);
+  font-family: var(--bubblegum);
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+.hero h1 {
+  margin: 0;
+  color: var(--purple);
+  font-family: var(--good-avocado);
+  font-size: 5rem;
+  line-height: 0.75;
+}
+
+.heroIntro {
+  max-width: 700px;
+  margin: 1.75rem 0 0;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: var(--green);
+}
+
+.heroWave {
+  position: relative;
+  z-index: 30;
+  background-color: var(--green);
+}
+
+/* FEATURED IMAGE */
+
+.featured {
+  background-color: var(--green);
+}
+
+.featuredInner {
+  overflow: hidden;
+}
+
+.featuredInner img {
+  display: block;
+
+  width: 100%;
+  height: 100vh;
+
+  object-fit: cover;
+}
+
+/* ARTICLE */
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 30;
+}
+
+.articleInner {
+  max-width: 900px;
+  position: relative;
+  background-color: var(--white);
+  padding: 3rem;
+  border-radius: 5rem;
+  margin: -22rem 6rem 11rem 6rem;
+  color: var(--green);
+}
+
+.articleInner p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.articleInner h2 {
+  color: var(--green);
+  font-family: var(--bubblegum);
+  font-size: 3.8rem;
+  line-height: 0.8;
+}
+
+.articleInner h3 {
+  margin: 3rem 0 1rem;
+
+  color: var(--green);
+
+  font-family: var(--good-avocado);
+
+  font-size: 2.8rem;
+  line-height: 0.85;
+}
+
+.articleInner a {
+  color: var(--purple);
+}
+
+/* QUOTE */
+
+.quote {
+  margin: 4rem 0;
+  padding: 3rem;
+  background-color: var(--sage);
+  border-radius: 3rem;
+  text-align: center;
+}
+
+.quote p {
+  margin: 0;
+  color: var(--green);
+  font-family: var(--bubblegum);
+  font-size: 3rem;
+  line-height: 0.9;
+  font-weight: 100;
+}
+
+/* LISTEN / RESOURCE BOX */
+
+.listenBox {
+  margin-top: 5rem;
+
+  padding: 3.5rem;
+
+  background-color: var(--yellow);
+
+  border-radius: 3rem;
+
+  text-align: center;
+
+  color: var(--white);
+}
+
+.listenBox > span {
+  color: var(--green);
+
+  font-family: var(--good-avocado);
+  font-size: 3rem;
+}
+
+.listenBox h2 {
+  color: var(--white);
+  font-size: 3.5rem;
+}
+
+.listenBox p {
+  max-width: 600px;
+
+  margin: 0 auto 2rem;
+
+  color: var(--white);
+}
+
+.listenButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.9rem 1.75rem;
+
+  background-color: var(--green);
+
+  border-radius: 3rem;
+
+  color: var(--white) !important;
+
+  font-family: var(--bubblegum);
+  font-size: 1.6rem;
+
+  text-decoration: none;
+
+  transition: transform 0.2s ease;
+}
+
+.listenButton:hover {
+  transform: translateY(-4px);
+}
+
+/* POST HIGHLIGHTS */
+
+.highlights {
+  background-color: var(--sage);
+  position: relative;
+  z-index: 1;
+}
+
+.highlightsInner {
+  margin: 0 auto;
+  flex-direction: column;
+  max-width: 1200px;
+  padding: 0 3rem 3rem 3rem;
+}
+
+.highlightsHeading {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.highlightsHeading span {
+  color: var(--green);
+
+  font-family: var(--bubblegum);
+  font-size: 2rem;
+
+  transform: rotate(-2deg);
+}
+
+.highlightsHeading h2 {
+  margin: 0;
+
+  color: var(--green);
+
+  font-family: var(--good-avocado);
+
+  font-size: 4.5rem;
+  line-height: 0.8;
+}
+
+.highlightCards {
+  max-width: 1200px;
+
+  display: flex;
+  gap: 2rem;
+}
+
+.highlightCard {
+  flex: 1;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  background-color: var(--white);
+
+  border-radius: 2.5rem;
+
+  color: var(--green);
+
+  text-decoration: none;
+
+  transition: transform 0.25s ease;
+  box-shadow: 0.45rem 0.55rem 0 var(--green);
+  transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.highlightCard:hover {
+  transform: translateY(-6px);
+}
+
+.highlightImage {
+  width: 100%;
+  height: 260px;
+
+  overflow: hidden;
+}
+
+.highlightImage img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.highlightContent {
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.highlightContent h3 {
+  margin: 0;
+
+  color: var(--green);
+
+  font-family: var(--good-avocado);
+
+  font-size: 2.7rem;
+  line-height: 0.8;
+}
+
+.highlightContent p {
+  margin: 1rem 0 1.5rem;
+
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.readMore {
+  display: flex;
+  gap: 0.6rem;
+  color: var(--yellow);
+  font-family: var(--good-avocado);
+  font-size: 2.8rem;
+  transform: rotate(-2deg);
+}
+
+.readMore:hover {
+  color: var(--green);
+}
+
+.readMore span {
+  font-size: 2.8rem;
+  transition: transform 0.2s ease;
+}
+
+.readMore:hover span {
+  transform: translateX(6px);
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .featuredInner img {
+    height: 500px;
+  }
+
+  .highlightCards {
+    flex-wrap: wrap;
+  }
+
+  .highlightCard {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 4rem 1rem 3rem;
+  }
+
+  .hero h1 {
+    font-size: 3.3rem;
+  }
+
+  .heroIntro {
+    font-size: 1.1rem;
+  }
+
+  .featured {
+    padding: 2rem 1rem 5rem;
+  }
+
+  .featuredInner {
+    border-radius: 2rem;
+  }
+
+  .featuredInner img {
+    height: 400px;
+  }
+
+  .article {
+    padding: 5rem 1.5rem;
+  }
+
+  .articleInner h2 {
+    font-size: 3rem;
+  }
+
+  .quote {
+    padding: 2rem;
+  }
+
+  .quote p {
+    font-size: 2.2rem;
+  }
+
+  .listenBox {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .listenBox h2 {
+    font-size: 2.8rem;
+  }
+
+  .highlights {
+    padding: 5rem 1rem 7rem;
+  }
+
+  .highlightCards {
+    flex-direction: column;
+  }
+
+  .highlightCard {
+    width: 100%;
+  }
+
+  .highlightImage {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .postType {
+    font-size: 1.7rem;
+  }
+
+  .featuredInner img {
+    height: 300px;
+  }
+
+  .articleInner p {
+    font-size: 1.05rem;
+  }
+
+  .articleInner h2 {
+    font-size: 2.7rem;
+  }
+
+  .quote p {
+    font-size: 2rem;
+  }
+
+  .listenBox h2 {
+    font-size: 2.5rem;
+  }
+
+  .highlightsHeading h2 {
+    font-size: 3.5rem;
+  }
+
+  .highlightContent h3 {
+    font-size: 2.4rem;
+  }
+}
