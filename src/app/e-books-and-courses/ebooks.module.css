@@ -1,0 +1,450 @@
+.hero {
+  position: relative;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 1rem 0rem;
+  text-align: center;
+  z-index: 20;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+}
+
+.hero h1 {
+  margin: 0;
+  color: var(--purple);
+  font-family: var(--good-avocado);
+  font-size: 4rem;
+  line-height: 0.65;
+}
+
+.hero h1 span {
+  display: block;
+  margin-top: 0.8rem;
+  color: var(--yellow);
+  font-family: var(--bubblegum);
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+.hero p {
+  max-width: 680px;
+  margin: 1.5rem 0 2rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.intro {
+  position: relative;
+  z-index: 40;
+  background-color: var(--sage);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+/* E-BOOKS */
+
+.resources {
+  position: relative;
+  background-color: var(--yellow);
+  padding: 12rem 1rem 2rem;
+}
+
+.resourcesInner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resourcesHeading {
+  max-width: 850px;
+  text-align: center;
+}
+
+.resourcesHeading h2 {
+  margin: 0;
+  color: var(--white);
+  font-family: var(--good-avocado);
+  font-size: 4.5rem;
+  line-height: 0.75;
+}
+
+.resourcesHeading h2 span {
+  display: block;
+  margin-top: 0.6rem;
+  color: var(--green);
+  font-family: var(--bubblegum);
+  font-size: 5.5rem;
+  font-weight: 400;
+}
+
+.resourcesHeading p {
+  max-width: 720px;
+  margin: 2rem auto 0;
+  color: var(--white);
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+.ebookGrid {
+  position: relative;
+  z-index: 41;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.ebookCard {
+  background-color: var(--white);
+  border-radius: 3rem;
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0.45rem 0.55rem 0 var(--green);
+  transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.iconBox {
+  flex-shrink: 0;
+  width: 190px;
+  height: 100%;
+  border-radius: 2rem;
+  background-color: var(--sage);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ebookIcon {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+}
+
+.ebookContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--green);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.ebookCard h3 {
+  margin: 0;
+  color: var(--purple);
+  font-family: var(--good-avocado);
+  font-size: 2.8rem;
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+
+.price {
+  margin: 0.75rem 0 0;
+  color: var(--yellow);
+  font-family: var(--bubblegum);
+  font-size: 2rem;
+}
+
+.description {
+  margin: 1rem 0 1.5rem;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.resourceButton {
+  display: inline-block;
+  padding: 0.85rem 1.4rem;
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 3rem;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.resourceButton:hover {
+  transform: translateY(-3px) rotate(-1deg);
+  opacity: 0.9;
+}
+
+/* COURSES */
+
+.courses {
+  margin-top: 5rem;
+  position: relative;
+  background-color: var(--green);
+  padding: 0rem 1rem 8rem;
+}
+
+.coursesInner {
+  width: 100%;
+  max-width: 850px;
+  margin: -50px auto -25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.constructionArt {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.shovel {
+  object-fit: contain;
+  transform: rotate(-10deg);
+}
+
+.leaf {
+  object-fit: contain;
+  transform: rotate(12deg);
+  filter: brightness(1.2);
+}
+
+.courseEyebrow {
+  margin: 0 0 1rem;
+  color: var(--yellow);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.courses h2 {
+  margin: 0;
+  color: var(--white);
+  font-family: var(--good-avocado);
+  font-size: 4.5rem;
+  line-height: 0.75;
+}
+
+.courses h2 span {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--yellow);
+  font-family: var(--bubblegum);
+  font-size: 6rem;
+  font-weight: 400;
+}
+
+.coursesInner > p:not(.courseEyebrow) {
+  max-width: 700px;
+  margin: 2rem auto;
+  color: var(--white);
+  font-size: 1.15rem;
+  line-height: 1.45;
+}
+
+.underConstruction {
+  background-color: var(--green);
+  position: relative;
+  z-index: 41;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border: 3px dashed var(--yellow);
+  border-radius: 3rem;
+  color: var(--yellow);
+  font-family: var(--bubblegum);
+  font-size: 2.6rem;
+  transform: rotate(-2deg);
+}
+
+/* CTA */
+
+.cta {
+  position: relative;
+  background-color: var(--lavender);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem 11rem;
+  text-align: center;
+}
+
+.ctaInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 850px;
+}
+
+.ctaInner h2 {
+  margin: 0;
+  color: var(--white);
+  font-size: 4.5rem;
+  line-height: 0.75;
+}
+
+.ctaInner h2 span {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--green);
+  font-family: var(--bubblegum);
+  font-size: 6.8rem;
+  font-weight: 400;
+}
+
+.ctaInner p {
+  max-width: 650px;
+  margin: 1.5rem 0 2rem;
+  color: var(--white);
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+  .ebookGrid {
+    grid-template-columns: 1fr;
+    max-width: 750px;
+  }
+
+  .ebookCard {
+    padding: 2.5rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1rem 8rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero h1 span {
+    font-size: 4rem;
+  }
+
+  .heroImage {
+    height: 65vh;
+  }
+
+  .resources {
+    padding-bottom: 8rem;
+  }
+
+  .resourcesHeading h2 {
+    font-size: 3.5rem;
+  }
+
+  .resourcesHeading h2 span {
+    font-size: 4rem;
+  }
+
+  .ebookCard {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .ebookContent {
+    align-items: center;
+  }
+
+  .iconBox {
+    width: 220px;
+    height: 220px;
+  }
+
+  .courses {
+    padding: 9rem 1rem;
+  }
+
+  .courses h2 {
+    font-size: 3.5rem;
+  }
+
+  .courses h2 span {
+    font-size: 4.5rem;
+  }
+
+  .ctaInner h2 {
+    font-size: 2.8rem;
+  }
+
+  .ctaInner h2 span {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h1 span {
+    font-size: 3.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .heroImage {
+    height: 55vh;
+  }
+
+  .resourcesHeading h2 {
+    font-size: 3rem;
+  }
+
+  .resourcesHeading h2 span {
+    font-size: 3.3rem;
+  }
+
+  .ebookCard h3 {
+    font-size: 2.4rem;
+  }
+
+  .courses h2 {
+    font-size: 3rem;
+  }
+
+  .courses h2 span {
+    font-size: 3.6rem;
+  }
+
+  .underConstruction {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.3rem;
+  }
+
+  .cta {
+    padding: 7rem 1rem 9rem;
+  }
+
+  .ctaInner h2 {
+    font-size: 2.3rem;
+  }
+
+  .ctaInner h2 span {
+    font-size: 3rem;
+  }
+}

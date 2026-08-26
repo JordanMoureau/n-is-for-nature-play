@@ -1,0 +1,878 @@
+.hero {
+  position: relative;
+  background-color: var(--white);
+  padding: 7rem 2rem 5rem;
+  z-index: 20;
+}
+
+.heroInner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.heroText {
+  max-width: 650px;
+}
+
+.eyebrow,
+.smallHeading {
+  margin: 0 0 1rem;
+  color: var(--green);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+.hero h1 {
+  margin: 0;
+  color: var(--purple);
+  font-family: var(--good-avocado);
+  font-size: 5rem;
+  line-height: 0.7;
+}
+
+.hero h1 span {
+  display: block;
+  margin-top: 0.6rem;
+  color: var(--yellow);
+  font-family: var(--bubblegum);
+  font-size: 5.7rem;
+  font-weight: 400;
+}
+
+.heroDescription {
+  max-width: 600px;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  line-height: 1.45;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  color: var(--green);
+  font-family: var(--bubblegum);
+  font-size: 3rem;
+}
+
+.fileType {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.buyButton,
+.purchaseButton {
+  display: inline-block;
+  padding: 1rem 1.8rem;
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 3rem;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.buyButton:hover,
+.purchaseButton:hover {
+  transform: translateY(-3px) rotate(-1deg);
+}
+
+/* PRODUCT ART */
+
+.heroArt {
+  flex-shrink: 0;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.resourceShape {
+  width: 350px;
+  min-height: 450px;
+  padding: 2.5rem;
+  background-color: var(--lavender);
+  border-radius: 3rem 3rem 50% 50% / 8% 8% 18% 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: rotate(2deg);
+}
+
+.pot {
+  width: 190px;
+  height: 190px;
+  object-fit: contain;
+}
+
+.resourceShape > p {
+  margin: 0.5rem 0 0;
+  color: var(--green);
+  font-family: var(--bubblegum);
+  font-size: 1.8rem;
+}
+
+.resourceShape h2 {
+  margin: 0;
+  color: var(--white);
+  font-family: var(--good-avocado);
+  font-size: 3.5rem;
+  line-height: 0.75;
+  text-transform: uppercase;
+}
+
+.resourceShape h2 span {
+  display: block;
+  color: var(--yellow);
+  font-family: var(--bubblegum);
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.resourceShape small {
+  margin-top: 1.5rem;
+  color: var(--green);
+  font-weight: 700;
+}
+
+.heroWave {
+  position: relative;
+  z-index: 30;
+  background-color: var(--green);
+}
+
+/* PROBLEM */
+
+.problem {
+  background-color: var(--green);
+  padding: 5rem 2rem 10rem;
+}
+
+.problemInner {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.problemText {
+  flex: 1;
+}
+
+.problemText .smallHeading {
+  color: var(--yellow);
+}
+
+.problemText h2 {
+  margin: 0 0 2rem;
+  color: var(--white);
+  font-family: var(--good-avocado);
+  font-size: 4.2rem;
+  line-height: 0.75;
+}
+
+.problemText h2 span {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--yellow);
+  font-family: var(--bubblegum);
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
+.problemText p:not(.smallHeading) {
+  color: var(--white);
+  font-size: 1.1rem;
+  line-height: 1.45;
+}
+
+.problemImage {
+  flex-shrink: 0;
+}
+
+.problemImage img {
+  width: 430px;
+  height: 500px;
+  object-fit: cover;
+  border: 10px solid var(--white);
+  border-radius: 50% 50% 3rem 3rem / 22% 22% 8% 8%;
+}
+
+/* SHIFT */
+
+.shift {
+  position: relative;
+  background-color: var(--yellow);
+  padding: 3rem 2rem 9rem;
+}
+
+.shiftInner {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.shiftInner h2 {
+  margin: 1rem 0 0;
+  color: var(--white);
+  font-family: var(--good-avocado);
+  font-size: 4.7rem;
+  line-height: 0.75;
+}
+
+.shiftInner h2 span {
+  display: block;
+  color: var(--green);
+  font-family: var(--bubblegum);
+  font-size: 5.5rem;
+  font-weight: 400;
+}
+
+.shiftInner p {
+  max-width: 700px;
+  margin: 2rem auto 0;
+  color: var(--white);
+  font-size: 1.15rem;
+  line-height: 1.45;
+}
+
+/* INCLUDED */
+
+.included {
+  background-color: var(--white);
+  padding: 10rem 2rem;
+}
+
+.includedInner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.includedHeading {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.includedHeading h2 {
+  margin: 0;
+  color: var(--purple);
+  font-family: var(--good-avocado);
+  font-size: 4.5rem;
+  line-height: 0.75;
+}
+
+.includedHeading h2 span {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--yellow);
+  font-family: var(--bubblegum);
+  font-size: 5.3rem;
+  font-weight: 400;
+}
+
+.includedHeading > p:not(.smallHeading) {
+  max-width: 650px;
+  margin: 2rem auto 0;
+  font-size: 1.1rem;
+  line-height: 1.45;
+}
+
+.includedGrid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.includedCard {
+  min-height: 330px;
+  padding: 2rem;
+  background-color: var(--sage);
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.includedCard:nth-child(2) {
+  background-color: var(--lavender);
+  transform: translateY(25px);
+}
+
+.includedCard span {
+  color: var(--yellow);
+  font-family: var(--bubblegum);
+  font-size: 2rem;
+}
+
+.includedCard h3 {
+  margin: auto 0 1rem;
+  color: var(--green);
+  font-family: var(--good-avocado);
+  font-size: 3rem;
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+
+.includedCard:nth-child(2) h3 {
+  color: var(--white);
+}
+
+.includedCard p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* WHIRLWIND */
+
+.whirlwind {
+  background-color: var(--white);
+  padding: 4rem 2rem 10rem;
+}
+
+.whirlwindInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
+.whirlwindArt {
+  width: 400px;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.whirlwindCircle {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-4deg);
+}
+
+.whirlwindCircle span {
+  color: var(--white);
+  font-family: var(--good-avocado);
+  font-size: 3rem;
+  line-height: 0.8;
+}
+
+.whirlwindCircle strong {
+  color: var(--green);
+  font-family: var(--bubblegum);
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.shovel {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  z-index: 2;
+  transform: rotate(18deg);
+}
+
+.whirlwindText {
+  flex: 1;
+}
+
+.whirlwindText h2 {
+  margin: 0;
+  color: var(--purple);
+  font-family: var(--good-avocado);
+  font-size: 4rem;
+  line-height: 0.75;
+}
+
+.whirlwindText h2 span {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--yellow);
+  font-family: var(--bubblegum);
+  font-size: 4.7rem;
+  font-weight: 400;
+}
+
+.whirlwindText p:not(.smallHeading) {
+  font-size: 1.1rem;
+  line-height: 1.45;
+}
+
+/* FOR YOU */
+
+.forYou {
+  position: relative;
+  background-color: var(--sage);
+  padding: 5rem 2rem 10rem;
+}
+
+.forYouInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.forYouText {
+  flex: 1;
+}
+
+.forYouText h2 {
+  margin: 0;
+  color: var(--green);
+  font-family: var(--good-avocado);
+  font-size: 4rem;
+  line-height: 0.75;
+}
+
+.forYouText h2 span {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--purple);
+  font-family: var(--bubblegum);
+  font-size: 4.4rem;
+  font-weight: 400;
+}
+
+.forYouText ul {
+  margin: 2rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.forYouText li {
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.forYouInner > img {
+  width: 390px;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 10px solid var(--white);
+}
+
+/* JENA */
+
+.jena {
+  position: relative;
+  background-color: var(--green);
+  padding: 5rem 2rem 10rem;
+}
+
+.jenaInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.jenaInner > img {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 10px solid var(--white);
+}
+
+.jenaText {
+  max-width: 600px;
+}
+
+.jenaEyebrow {
+  margin: 0 0 1rem;
+  color: var(--yellow);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+.jenaText h2 {
+  margin: 0;
+  color: var(--white);
+  font-family: var(--good-avocado);
+  font-size: 4rem;
+  line-height: 0.75;
+}
+
+.jenaText h2 span {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--yellow);
+  font-family: var(--bubblegum);
+  font-size: 4.3rem;
+  font-weight: 400;
+}
+
+.jenaText p:not(.jenaEyebrow) {
+  color: var(--white);
+  font-size: 1.1rem;
+  line-height: 1.45;
+}
+
+/* TESTIMONIAL */
+
+.testimonial {
+  position: relative;
+  background-color: var(--lavender);
+  padding: 7rem 2rem 9rem;
+}
+
+.testimonialInner {
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonialInner p {
+  margin: 1rem 0 1.5rem;
+  color: var(--white);
+  font-family: var(--good-avocado);
+  font-size: 3.5rem;
+  line-height: 0.85;
+}
+
+.testimonialInner span {
+  color: var(--green);
+  font-weight: 700;
+}
+
+/* PURCHASE */
+
+.purchase {
+  background-color: var(--green);
+  padding: 9rem 2rem;
+}
+
+.purchaseInner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.purchaseText {
+  max-width: 700px;
+}
+
+.purchaseEyebrow {
+  margin: 0 0 1rem;
+  color: var(--yellow);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+.purchase h2 {
+  margin: 0;
+  color: var(--white);
+  font-family: var(--good-avocado);
+  font-size: 4rem;
+  line-height: 0.75;
+}
+
+.purchase h2 span {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--yellow);
+  font-family: var(--bubblegum);
+  font-size: 4.8rem;
+  font-weight: 400;
+}
+
+.purchaseText > p:not(.purchaseEyebrow):not(.digitalNote) {
+  margin: 2rem 0;
+  color: var(--white);
+  font-size: 1.1rem;
+  line-height: 1.45;
+}
+
+.purchaseBottom {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.purchaseBottom strong {
+  color: var(--yellow);
+  font-family: var(--bubblegum);
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.purchaseButton {
+  background-color: var(--yellow);
+  color: var(--green);
+}
+
+.digitalNote {
+  margin-top: 1.25rem;
+  color: var(--white);
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.purchaseIcon {
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+/* CTA */
+
+.cta {
+  position: relative;
+  background-color: var(--lavender);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9rem 1rem 11rem;
+  text-align: center;
+}
+
+.ctaInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 850px;
+}
+
+.ctaInner h2 {
+  margin: 0;
+  color: var(--white);
+  font-size: 4.5rem;
+  line-height: 0.75;
+}
+
+.ctaInner h2 span {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--green);
+  font-family: var(--bubblegum);
+  font-size: 6rem;
+  font-weight: 400;
+}
+
+.ctaInner p {
+  max-width: 650px;
+  margin: 1.5rem 0 2rem;
+  color: var(--white);
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .heroInner,
+  .problemInner,
+  .whirlwindInner,
+  .forYouInner,
+  .jenaInner {
+    flex-direction: column;
+  }
+
+  .heroText,
+  .problemText,
+  .whirlwindText,
+  .forYouText,
+  .jenaText {
+    text-align: center;
+  }
+
+  .heroText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroArt {
+    width: 100%;
+  }
+
+  .includedGrid {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .includedCard:nth-child(2) {
+    transform: none;
+  }
+
+  .whirlwindArt {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 5rem 1rem 4rem;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero h1 span {
+    font-size: 4.2rem;
+  }
+
+  .resourceShape {
+    width: 300px;
+    min-height: 400px;
+  }
+
+  .problemImage img,
+  .forYouInner > img,
+  .jenaInner > img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .problemText h2,
+  .whirlwindText h2,
+  .forYouText h2,
+  .jenaText h2,
+  .purchase h2 {
+    font-size: 3.2rem;
+  }
+
+  .problemText h2 span,
+  .whirlwindText h2 span,
+  .forYouText h2 span,
+  .jenaText h2 span,
+  .purchase h2 span {
+    font-size: 3.6rem;
+  }
+
+  .shiftInner h2,
+  .includedHeading h2 {
+    font-size: 3.4rem;
+  }
+
+  .shiftInner h2 span,
+  .includedHeading h2 span {
+    font-size: 4rem;
+  }
+
+  .whirlwindCircle {
+    width: 270px;
+    height: 270px;
+  }
+
+  .testimonialInner p {
+    font-size: 2.8rem;
+  }
+
+  .purchaseInner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .purchaseBottom {
+    justify-content: center;
+  }
+
+  .ctaInner h2 {
+    font-size: 2.8rem;
+  }
+
+  .ctaInner h2 span {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero h1 span {
+    font-size: 3.4rem;
+  }
+
+  .resourceShape {
+    width: 270px;
+    min-height: 370px;
+  }
+
+  .resourceShape h2 {
+    font-size: 3rem;
+  }
+
+  .problemImage img,
+  .forYouInner > img,
+  .jenaInner > img {
+    width: 290px;
+    height: 290px;
+  }
+
+  .whirlwindCircle {
+    width: 240px;
+    height: 240px;
+  }
+
+  .whirlwindCircle span {
+    font-size: 2.3rem;
+  }
+
+  .whirlwindCircle strong {
+    font-size: 3rem;
+  }
+
+  .testimonialInner p {
+    font-size: 2.3rem;
+  }
+
+  .purchaseBottom {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cta {
+    padding: 7rem 1rem 9rem;
+  }
+
+  .ctaInner h2 {
+    font-size: 2.3rem;
+  }
+
+  .ctaInner h2 span {
+    font-size: 3rem;
+  }
+}

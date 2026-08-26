@@ -37,7 +37,7 @@ export default function MainNav() {
 
           <div className={styles.sider}>
             <div className={styles.courses}>
-              <Link href="/">E-courses &amp; E-books</Link>
+              <Link href="/e-books-and-courses">E-courses &amp; E-books</Link>
             </div>
 
             <OrganicButton variant="lavender" href="/contact-us">
