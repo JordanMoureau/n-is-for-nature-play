@@ -273,20 +273,24 @@
 }
 
 @media screen and (max-width: 1120px) {
+  .heroImage {
+    height: 60vh;
+  }
   .cards {
     height: fit-content;
   }
 
   .cardsBox {
-    margin-top: -150px;
+    margin-top: -60px;
     margin-bottom: -150px;
-    padding: 0 3rem;
+    padding: 2rem 3rem;
   }
 
   .card {
     width: 100%;
     border-radius: 3rem;
     height: fit-content;
+    box-shadow: 0.45rem 0.55rem 0 var(--yellow);
   }
 
   .buttonplacement {
@@ -333,12 +337,20 @@
 
 @media screen and (max-width: 700px) {
   .cardsBox {
-    margin-top: -100px;
+    margin-top: -40px;
     margin-bottom: -100px;
     padding: 0 1rem;
   }
 
   .card p {
     max-width: 100%;
+  }
+
+  .gridtop .iconrow {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 0px;
   }
 }

@@ -29,6 +29,7 @@
   padding: 2rem 1rem 1rem;
   background: var(--sage);
   border-radius: 50% 50% 3rem 3rem / 22% 22% 8% 8%;
+
   text-align: center;
 }
 
@@ -79,6 +80,7 @@
     width: 100%;
     border-radius: 3rem;
     height: fit-content;
+    box-shadow: 0.45rem 0.55rem 0 var(--yellow);
   }
 
   .buttonplacement {
