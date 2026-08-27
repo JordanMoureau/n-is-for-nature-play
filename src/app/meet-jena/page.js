@@ -234,55 +234,8 @@ export default function MeetJennaPage() {
         <WaveBottom wave="#afa9d2" spacer="#338e74" />
       </section>
 
-      <div className={styles.aboutjena}>
-        <WaveTop wave={"#e4b928"} spacer={"#338e74"} />
-        <div className={styles.innerbubbles}>
-          <div className={styles.bubbleMain}>
-            <Image src="/jena-main.jpg" alt="" width={600} height={600} />
-          </div>
-
-          <div className={styles.bubbleTop}>
-            <Image src="/garden-detail.jpg" alt="" width={250} height={250} />
-          </div>
-
-          <div className={styles.bubbleBottom}>
-            <Image src="/hero.jpg" alt="" width={400} height={400} />
-          </div>
-
-          <div className={styles.bubbleRight}>
-            <Image
-              src="/girl-with-flower.jpg"
-              alt=""
-              width={250}
-              height={250}
-            />
-          </div>
-        </div>
-
-        <div className={styles.abouttext}>
-          <h3>the designer behind the dirt</h3>
-          <h2>
-            Hi I'm Jenna -- landscape architect nature play expert,
-            artist-builder, garden fanatic, and mom of twins.
-          </h2>
-          <p>
-            I believe children deserve outdoor spaces that invite curiosity,
-            creativity, regulation, and joy. My work blends professional
-            landscape design with a deep understanding of sensory needs, child
-            development, and the magic that happens when kids are given room to
-            explore.
-          </p>
-
-          <p>
-            I help families, schools, and communities create nature play spaces
-            that are beautiful, practical, and rooted in the way children
-            actually play.
-          </p>
-        </div>
-        <WaveBottom wave={"#338e74"} spacer={"#e4b928"} />
-      </div>
-
       <section className={styles.cta}>
+        <WaveTop wave={"#afa9d2"} spacer={"#f7f6f2"} />
         <div className={styles.ctaInner}>
           <h2>
             Have a space you cannot stop
