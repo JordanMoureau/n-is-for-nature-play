@@ -373,6 +373,9 @@
     height: 350px;
     object-fit: cover;
   }
+  .cta {
+    margin-top: 3rem;
+  }
 
   .postContent {
     padding: 2.5rem;
@@ -412,10 +415,6 @@
     font-size: 1.1rem;
   }
 
-  .blog {
-    padding: 6rem 1rem;
-  }
-
   .blogHeading {
     margin-bottom: 3rem;
   }
@@ -430,10 +429,6 @@
 
   .post {
     border-radius: 2rem;
-  }
-
-  .postContent {
-    padding: 2rem;
   }
 
   .postContent h3 {
