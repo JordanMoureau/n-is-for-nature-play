@@ -251,7 +251,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 9rem 1rem 11rem;
+  padding: 7rem 1rem 11rem;
   text-align: center;
 }
 
@@ -287,12 +287,6 @@
 }
 
 @media screen and (max-width: 1120px) {
-  .cardsBox {
-    margin-top: -150px;
-    margin-bottom: -150px;
-    padding: 0 3rem;
-  }
-
   .card {
     width: 100%;
     height: auto;
@@ -328,11 +322,15 @@
       font-size: 4.5rem;
     }
   }
+
+  .card {
+    box-shadow: 0.45rem 0.55rem 0 var(--green);
+  }
 }
 
 @media (max-width: 768px) {
   .hero {
-    padding: 4rem 1rem 10rem;
+    padding: 4rem 1rem 0rem;
   }
 
   .hero h1 {
@@ -379,24 +377,25 @@
 
     .iconrow {
       width: 100%;
-      margin-top: -45px;
+      margin-top: 0px;
+      align-items: center;
+      justify-content: center;
     }
   }
 
-  .ctaInner h2 {
-    font-size: 2.8rem;
+  .cta {
+    padding: 5rem 1rem 9rem;
+    margin-bottom: -20px;
   }
 
-  .ctaInner h2 span {
-    font-size: 3.6rem;
+  .ctaInner {
+    margin-bottom: -3rem;
   }
 }
 
 @media screen and (max-width: 700px) {
   .cardsBox {
-    margin-top: -100px;
-    margin-bottom: -100px;
-    padding: 0 1rem;
+    margin-bottom: 0px;
   }
 
   .card p {
@@ -404,7 +403,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
   .hero h1 {
     font-size: 2.5rem;
   }
@@ -444,15 +443,11 @@
     }
   }
 
-  .cta {
-    padding: 7rem 1rem 9rem;
-  }
-
   .ctaInner h2 {
-    font-size: 2.3rem;
+    font-size: 3rem;
   }
 
   .ctaInner h2 span {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 }
