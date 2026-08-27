@@ -254,7 +254,11 @@ export default function Home() {
             <LeafOne />
 
             <div className={styles.bumper}>
-              <OrganicButton variant="yellow" fontSize={"2.2rem"}>
+              <OrganicButton
+                variant="yellow"
+                href={"/meet-jena"}
+                fontSize={"2.2rem"}
+              >
                 Meet Jena
               </OrganicButton>
             </div>
