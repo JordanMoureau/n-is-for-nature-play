@@ -136,14 +136,14 @@ const midBoxes = [
     number: "#2",
     title: "Explore the Possibilities",
     text: "Jena helps you look at the space through a nature-play lens, considering movement, sensory needs, imagination, gathering, and the way children naturally use outdoor environments.",
-    altColor: false,
+    altColor: true,
   },
 
   {
     number: "#3",
     title: "Shape the Vision",
     text: "Together, you narrow the possibilities into a thoughtful direction that fits your space, your goals, and the children who will actually be using it.",
-    backgroundImage: "/watercolor-two.png",
+    backgroundImage: "/garden-detail.jpg",
   },
 ];
 
@@ -152,7 +152,7 @@ const smallBoxes = [
     number: "#4",
     title: "Design the Space",
     text: "Jena brings the ideas together into a cohesive design, giving you a clear plan for how the different areas, materials, and play opportunities can work together.",
-    altColor: false,
+    altColor: true,
   },
 
   {
@@ -164,7 +164,7 @@ const smallBoxes = [
     number: "#5",
     title: "Bring It to Life",
     text: "With your design in hand, you have a practical starting point for creating a natural play space that feels intentional, inviting, and made for real childhood.",
-    altColor: false,
+    altColor: true,
   },
 ];
 
@@ -262,7 +262,7 @@ export default function DesignASpacePage() {
 
           <p>
             I work with people who want outdoor spaces that feel thoughtful,
-            imaginative, practical, and genuinely useful for children.
+            imaginative, practical, and supportive for children.
           </p>
         </div>
 
@@ -292,39 +292,4 @@ export default function DesignASpacePage() {
       </div>
     </main>
   );
-}
-
-{
-  /* <section className={styles.intro}>
-<WaveTop wave="#e4b928" spacer="#cbdcbe" />
-
-<div className={styles.introBox}>
-  <Image
-    src="/jena-main.jpg"
-    alt="Jena, nature play designer and landscape architect"
-    width={1000}
-    height={1000}
-    priority
-  />
-
-  <div className={styles.introInner}>
-    <h2>You already have the space. It just needs a better plan.</h2>
-
-    <p>
-      Maybe your yard feels empty. Maybe your school playground is all
-      equipment and nowhere to explore. Maybe you know you want gardens,
-      sensory play, climbing, digging, loose parts, and quiet spaces —
-      but you do not know how to make all of it work together.
-    </p>
-
-    <p>
-      That is where I come in. I help turn the space you already have
-      into a thoughtful outdoor environment built around the children
-      who actually use it.
-    </p>
-  </div>
-</div>
-
-<WaveBottom wave="#cbdcbe" spacer="#338e74" />
-</section> */
 }

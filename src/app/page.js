@@ -184,7 +184,7 @@ const smallBoxes = [
   {
     number: "#5",
     title: "Sensory",
-    text: "Children build relationships with each other, their caregivers, and the living world around them.",
+    text: "Children experience sensation in their own unique way through thoughtfully crafted environments and materials.",
     altColor: false,
   },
 ];
@@ -345,7 +345,7 @@ export default function Home() {
         <div className={styles.abouttext}>
           <h3>Meet the designer behind the dirt</h3>
           <h2>
-            Hi I'm Jenna -- landscape architect nature play expert,
+            Hi I'm Jena -- landscape architect nature play expert,
             artist-builder, garden fanatic, and mom of twins.
           </h2>
           <p>

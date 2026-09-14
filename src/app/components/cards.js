@@ -20,10 +20,10 @@ const cardContent = [
   },
   {
     icon: "/icon-net.png",
-    title: "Take a Course",
+    title: "Live Workshops",
     text: "Learn how to create nature play spaces step by step, with practical guidance you can actually use.",
-    buttonText: "View Courses",
-    link: "/courses",
+    buttonText: "Sign Up for a Workshop",
+    link: "/contact-us",
   },
 ];
 

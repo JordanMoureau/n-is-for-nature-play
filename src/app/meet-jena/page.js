@@ -112,7 +112,7 @@ export default function MeetJennaPage() {
         <div className={styles.heroContent}>
           <h1>
             Hi, I’m Jena.
-            <span>I design places where childhood gets to happen.</span>
+            <span>I design places where childhood happens.</span>
           </h1>
 
           <p>

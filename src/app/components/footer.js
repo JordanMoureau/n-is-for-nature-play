@@ -37,8 +37,8 @@ const rightLinks = [
     href: "/e-books-and-courses",
   },
   {
-    label: "The Ultimate DIY Guide",
-    href: "/the-ultimate-diy-guide",
+    label: "Privacy Policy & Terms of Use",
+    href: "/legal",
   },
 ];
 

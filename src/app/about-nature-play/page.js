@@ -148,7 +148,7 @@ const cardContent = [
 
 const bigBox = {
   title: "Teachers & Educators",
-  text: "Nature gives children space to move, breathe, notice, dig, touch, climb, listen, and settle.",
+  text: "Nature play spaces help kids with sensory regulation so they can grow, learn, and imagine",
   backgroundImage: "/hero.jpg",
 };
 
@@ -160,7 +160,7 @@ const midBoxes = [
   },
   {
     title: "Parks & Rec",
-    text: "A stick can become a wand, a bridge, a tool, a sword, a fishing pole, or the entire plot of a tiny woodland opera.",
+    text: "Families are actively seeking out the benefits of nature play and outdoor learning spaces.",
     backgroundImage: "/garden-detail.jpg",
   },
 ];
@@ -168,7 +168,7 @@ const midBoxes = [
 const smallBoxes = [
   {
     title: "Communities",
-    text: "A stick can become a wand, a bridge, a tool, a sword, a fishing pole, or the entire plot of a tiny woodland opera.",
+    text: "Reimagine the potential fo community spaces to be beautiful, engaging and healing for kids and fmailies.",
     altColor: true,
   },
   {
@@ -211,7 +211,7 @@ export default function AboutNaturePlayPage() {
         <WaveTop wave="#e4b928" spacer="#cbdcbe" />
         <div className={styles.introBox}>
           <Image
-            src="/abouthero.png"
+            src="/hero.jpg"
             alt="Jena, founder of N Is for Nature Play"
             width={1400}
             height={900}
