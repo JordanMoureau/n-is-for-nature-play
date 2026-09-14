@@ -38,7 +38,7 @@ const rightLinks = [
   },
   {
     label: "Privacy Policy & Terms of Use",
-    href: "/legal",
+    href: "/terms",
   },
 ];
 
