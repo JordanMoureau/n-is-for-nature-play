@@ -300,7 +300,7 @@ export default function AboutNaturePlayPage() {
           </div>
           <p>
             Nature Play isn’t just about entertainment. It has documented
-            pysiological benefits to children and we know how to build spaces to
+            holistic benefits to children and we know how to build spaces to
             enhance those benefits.
           </p>
         </div>
