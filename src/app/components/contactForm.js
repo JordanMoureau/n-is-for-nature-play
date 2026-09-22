@@ -31,7 +31,7 @@ export default function ContactForm({ Top }) {
 
         <form
           className={styles.form}
-          action="https://formspree.io/f/YOUR_FORM_ID"
+          action="https://formspree.io/f/mqpaqjyo"
           method="POST"
         >
           <input
