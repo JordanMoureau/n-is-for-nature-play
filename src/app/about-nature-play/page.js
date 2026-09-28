@@ -128,21 +128,21 @@ const cardContent = [
     title: "Design a Space",
     text: "Get guidance for creating a custom sensory-rich outdoor play area for your home, school, childcare center, or community space.",
     buttonText: "Start a Design Project",
-    link: "/design",
+    link: "/design-a-space",
   },
   {
     icon: "/icon-pot.png",
     title: "Learn to DIY",
     text: "Explore approachable guides for building outdoor play invitations, sensory gardens, and nature-based spaces at your own pace.",
     buttonText: "Shop eBooks",
-    link: "/ebooks",
+    link: "/e-books-and-courses",
   },
   {
     icon: "/icon-net.png",
     title: "Take a Course",
     text: "Learn how to create nature play spaces step by step, with practical guidance you can actually use.",
     buttonText: "View Courses",
-    link: "/courses",
+    link: "/e-books-and-courses",
   },
 ];
 

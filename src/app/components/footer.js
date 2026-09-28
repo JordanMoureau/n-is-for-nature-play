@@ -109,7 +109,11 @@ export default function Footer() {
           </div>
 
           <Link href="/contact-us">
-            <OrganicButton variant="lavender" fontSize="3rem" href="/contact">
+            <OrganicButton
+              variant="lavender"
+              fontSize="3rem"
+              href="/contact-us"
+            >
               Contact Us
             </OrganicButton>
           </Link>

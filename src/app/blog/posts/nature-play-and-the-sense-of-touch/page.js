@@ -12,7 +12,7 @@ import OrganicButton from "@/app/components/organicButton";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/nature-play-and-the-sense-of-touch/`;
+const pageUrl = `${siteUrl}/blog/nature-play-and-the-sense-of-touch/`;
 
 export const metadata = {
   title: "Tactile Sensory Activities for Kids | Nature Play Ideas",
@@ -21,7 +21,7 @@ export const metadata = {
     "Explore tactile sensory activities for kids using mud, water, sand, loose parts, nature looms, sensory paths, and touch-friendly plants.",
 
   alternates: {
-    canonical: "/nature-play-and-the-sense-of-touch/",
+    canonical: "/blog/nature-play-and-the-sense-of-touch/",
   },
 
   openGraph: {

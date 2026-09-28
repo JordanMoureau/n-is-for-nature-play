@@ -11,7 +11,7 @@ import Arrows from "../components/arrows";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/meet-jenna`;
+const pageUrl = `${siteUrl}/meet-jena`;
 
 export const metadata = {
   title: "Meet Jena | N Is for Nature Play",
@@ -20,14 +20,14 @@ export const metadata = {
     "Meet Jena, landscape architect, nature play designer, artist-builder, garden fanatic, and mom behind N Is for Nature Play.",
 
   alternates: {
-    canonical: "/meet-jenna",
+    canonical: "/meet-jena",
   },
 
   openGraph: {
     title: "Meet Jena | N Is for Nature Play",
     description:
       "Meet the landscape architect and nature play designer behind N Is for Nature Play.",
-    url: "/meet-jenna",
+    url: "/meet-jena",
   },
 
   twitter: {

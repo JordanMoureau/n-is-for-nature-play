@@ -9,7 +9,7 @@ import Arrows from "../components/arrows";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/ebooks-courses`;
+const pageUrl = `${siteUrl}/e-books-and-courses`;
 
 export const metadata = {
   title: "E-Books & Courses | Nature Play Resources",
@@ -18,14 +18,14 @@ export const metadata = {
     "Explore practical e-books and learning resources from N Is for Nature Play designed to help families understand sensory needs, nature play, and child-centered environments.",
 
   alternates: {
-    canonical: "/ebooks-courses",
+    canonical: "/e-books-and-courses",
   },
 
   openGraph: {
     title: "E-Books & Courses | N Is for Nature Play",
     description:
       "Practical resources for creating sensory-rich, nature-connected spaces that support real children and real families.",
-    url: "/ebooks-courses",
+    url: "/e-books-and-courses",
   },
 
   twitter: {

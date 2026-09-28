@@ -12,7 +12,7 @@ import OrganicButton from "@/app/components/organicButton";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/podcast-conversation-with-mel-findlater-at-permission-to-be-human/`;
+const pageUrl = `${siteUrl}/blog/podcast-conversation-with-mel-findlater-at-permission-to-be-human/`;
 
 export const metadata = {
   title:
@@ -23,7 +23,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "/podcast-conversation-with-mel-findlater-at-permission-to-be-human/",
+      "/blog/podcast-conversation-with-mel-findlater-at-permission-to-be-human/",
   },
 
   openGraph: {

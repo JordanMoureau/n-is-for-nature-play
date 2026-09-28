@@ -12,7 +12,7 @@ import OrganicButton from "@/app/components/organicButton";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/hello-world/`;
+const pageUrl = `${siteUrl}/blog/hello-world/`;
 
 export const metadata = {
   title: "Welcome to N Is for Nature Play | Sensory-Rich Nature Play for Kids",
@@ -21,7 +21,7 @@ export const metadata = {
     "Meet Jena and discover why sensory-rich nature play can be inclusive, healing, joyful, and deeply supportive for children of all abilities and diversities.",
 
   alternates: {
-    canonical: "/hello-world/",
+    canonical: "/blog/hello-world/",
   },
 
   openGraph: {
@@ -306,7 +306,7 @@ export default function WelcomeToNaturePlayPost() {
 
               <OrganicButton
                 variant="green"
-                href="/product/ebook-nature-play-for-the-7-senses/"
+                href="/e-books-and-courses"
                 fontSize={"2.2rem"}
               >
                 Explore the Guide {">"}

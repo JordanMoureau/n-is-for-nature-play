@@ -130,7 +130,7 @@ export default function TermsPage() {
             Please review product descriptions carefully before purchasing. If
             you experience a problem accessing a purchased resource or believe
             there is an issue with your order, please{" "}
-            <Link href="/contact">contact N Is for Nature Play</Link>.
+            <Link href="/contact-us">contact N Is for Nature Play</Link>.
           </p>
 
           <h3>Educational Information</h3>
@@ -409,7 +409,7 @@ export default function TermsPage() {
 
           <p>
             Your use of this website and our services is also subject to our{" "}
-            <Link href="/privacy">Privacy Policy</Link>, which explains how N Is
+            <Link href="/terms">Privacy Policy</Link>, which explains how N Is
             for Nature Play collects, uses, and protects personal information.
           </p>
 
@@ -441,7 +441,7 @@ export default function TermsPage() {
           <p>
             If you have questions about these Terms and Conditions, your
             purchase, or an N Is for Nature Play program or service, please{" "}
-            <Link href="/contact">contact N Is for Nature Play</Link>.
+            <Link href="/contact-us">contact N Is for Nature Play</Link>.
           </p>
         </div>
       </section>

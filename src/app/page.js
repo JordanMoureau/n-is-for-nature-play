@@ -121,7 +121,7 @@ const jsonLd = {
           item: {
             "@type": "Course",
             name: "Nature Play Courses",
-            url: `${siteUrl}/courses`,
+            url: `${siteUrl}/e-books-and-courses`,
             description:
               "Educational courses for creating nature-based play and learning experiences for children.",
             provider: {
@@ -135,7 +135,7 @@ const jsonLd = {
           item: {
             "@type": "CreativeWork",
             name: "Nature Play Ebooks",
-            url: `${siteUrl}/ebooks`,
+            url: `${siteUrl}/e-books-and-courses`,
             description:
               "Practical ebooks and downloadable resources about nature play, sensory environments, and outdoor learning.",
             publisher: {
