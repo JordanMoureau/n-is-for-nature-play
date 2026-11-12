@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import MainNav from "./components/mainNav";
 import Footer from "./components/footer";
+import Script from "next/script";
 
 const goodAvocado = localFont({
   src: "./fonts/5239Good-Avocado.woff2",
@@ -106,6 +107,19 @@ export default function RootLayout({ children }) {
         {children}
 
         <Footer />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-LWYNZB881B"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LWYNZB881B');
+          `}
+        </Script>
       </body>
     </html>
   );
