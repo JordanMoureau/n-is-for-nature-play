@@ -20,6 +20,9 @@ const siteUrl =
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
+  verification: {
+    google: "sGAfSJUMIixfKcPstyHPcjTLai7xQ1aAPbXKzGtG-hQ",
+  },
 
   title: {
     default: "N Is for Nature Play",
