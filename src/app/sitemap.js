@@ -1,6 +1,22 @@
-import postSlugs from "./blog/postSlugs.json";
+import fs from "fs";
+import path from "path";
 
 const siteUrl = "https://nisfornatureplay.com";
+
+const postsDir = path.join(process.cwd(), "src", "app", "blog", "posts");
+
+function getPostSlugs() {
+  return fs
+    .readdirSync(postsDir, { withFileTypes: true })
+    .filter(
+      (entry) =>
+        entry.isDirectory() &&
+        !entry.name.startsWith("_") &&
+        !entry.name.startsWith("(") &&
+        !entry.name.startsWith("[")
+    )
+    .map((entry) => entry.name);
+}
 
 export default function sitemap() {
   const pagePaths = [
@@ -17,7 +33,7 @@ export default function sitemap() {
     "/the-ultimate-diy-guide",
   ];
 
-  const postPaths = postSlugs.map((slug) => `/blog/posts/${slug}`);
+  const postPaths = getPostSlugs().map((slug) => `/blog/posts/${slug}`);
 
   return [...pagePaths, ...postPaths].map((path) => ({
     url: `${siteUrl}${path}`,
