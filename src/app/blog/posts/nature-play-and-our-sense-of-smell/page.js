@@ -12,7 +12,7 @@ import OrganicButton from "@/app/components/organicButton";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/blog/nature-play-and-our-sense-of-smell/`;
+const pageUrl = `${siteUrl}/blog/posts/nature-play-and-our-sense-of-smell/`;
 
 export const metadata = {
   title: "Olfactory Sensory Activities for Kids | Nature Play Ideas",
@@ -21,7 +21,7 @@ export const metadata = {
     "Explore how flowers, soil, herbs, compost, animals, and fragrant plants can support children’s sense of smell through sensory-rich nature play.",
 
   alternates: {
-    canonical: "/blog/nature-play-and-our-sense-of-smell/",
+    canonical: "/blog/posts/nature-play-and-our-sense-of-smell/",
   },
 
   openGraph: {

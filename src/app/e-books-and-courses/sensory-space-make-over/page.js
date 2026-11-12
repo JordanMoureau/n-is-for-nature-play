@@ -9,7 +9,7 @@ import Arrows from "../../components/arrows";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/e-books-and-courses/sensory-space-makeover`;
+const pageUrl = `${siteUrl}/e-books-and-courses/sensory-space-make-over`;
 
 const purchaseUrl = "https://nisfornatureplay.com/e-books-and-courses";
 
@@ -20,14 +20,14 @@ export const metadata = {
     "Learn how to create calmer, more sensory-supportive spaces at home with the Sensory Space Makeover from N Is for Nature Play.",
 
   alternates: {
-    canonical: "/e-books-and-courses/sensory-space-makeover",
+    canonical: "/e-books-and-courses/sensory-space-make-over",
   },
 
   openGraph: {
     title: "Sensory Space Makeover",
     description:
       "Learn to see your home through your child's sensory lens and make practical changes that support calm, connection, and regulation.",
-    url: "/e-books-and-courses/sensory-space-makeover",
+    url: "/e-books-and-courses/sensory-space-make-over",
   },
 
   twitter: {

@@ -12,7 +12,7 @@ import OrganicButton from "@/app/components/organicButton";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/blog/nature-play-for-the-7-senses/`;
+const pageUrl = `${siteUrl}/blog/posts/nature-play-for-the-7-senses/`;
 
 export const metadata = {
   title: "Nature Play for the 7 Senses | Sensory Activities for Kids",
@@ -21,7 +21,7 @@ export const metadata = {
     "Explore children’s seven sensory systems and learn how sensory-rich nature play can support development, regulation, movement, imagination, and connection.",
 
   alternates: {
-    canonical: "/blog/nature-play-for-the-7-senses/",
+    canonical: "/blog/posts/nature-play-for-the-7-senses/",
   },
 
   openGraph: {

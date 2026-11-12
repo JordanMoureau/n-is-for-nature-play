@@ -12,7 +12,7 @@ import OrganicButton from "@/app/components/organicButton";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/blog/the-language-of-the-senses/`;
+const pageUrl = `${siteUrl}/blog/posts/the-language-of-the-senses/`;
 
 export const metadata = {
   title: "The Language of the Senses | Sensory Play & Child Development",
@@ -21,7 +21,7 @@ export const metadata = {
     "Explore how children understand and communicate with their environment through sensory experience, nature play, movement, texture, color, sound, and connection.",
 
   alternates: {
-    canonical: "/blog/the-language-of-the-senses/",
+    canonical: "/blog/posts/the-language-of-the-senses/",
   },
 
   openGraph: {

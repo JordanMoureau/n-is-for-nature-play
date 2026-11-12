@@ -9,7 +9,7 @@ import Arrows from "../../components/arrows";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/e-books-and-courses/nature-play-seven-senses`;
+const pageUrl = `${siteUrl}/e-books-and-courses/nature-play-for-the-seven-senses`;
 
 const purchaseUrl = "https://nisfornatureplay.com/e-books-and-courses";
 
@@ -20,14 +20,14 @@ export const metadata = {
     "Discover how nature play can support all seven sensory systems with this practical 30-page guide from nature play designer Jena Ponti Jauchius.",
 
   alternates: {
-    canonical: "/e-books-and-courses/nature-play-seven-senses",
+    canonical: "/e-books-and-courses/nature-play-for-the-seven-senses",
   },
 
   openGraph: {
     title: "Nature Play for the 7 Senses",
     description:
       "A practical guide to creating sensory-rich nature play experiences for children at home.",
-    url: "/e-books-and-courses/nature-play-seven-senses",
+    url: "/e-books-and-courses/nature-play-for-the-seven-senses",
   },
 
   twitter: {

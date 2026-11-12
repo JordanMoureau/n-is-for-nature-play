@@ -12,7 +12,7 @@ import OrganicButton from "@/app/components/organicButton";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/blog/nature-play-and-the-sense-of-sight/`;
+const pageUrl = `${siteUrl}/blog/posts/nature-play-and-the-sense-of-sight/`;
 
 export const metadata = {
   title: "Visual Sensory Activities for Kids | Nature Play Ideas",
@@ -21,7 +21,7 @@ export const metadata = {
     "Explore how color, movement, shape, pattern, texture, garden art, magnifying tools, and sensory plants can support children’s visual development through nature play.",
 
   alternates: {
-    canonical: "/blog/nature-play-and-the-sense-of-sight/",
+    canonical: "/blog/posts/nature-play-and-the-sense-of-sight/",
   },
 
   openGraph: {

@@ -12,7 +12,7 @@ import OrganicButton from "@/app/components/organicButton";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/blog/nature-play-and-our-proprioceptive-system/`;
+const pageUrl = `${siteUrl}/blog/posts/nature-play-and-our-proprioceptive-system/`;
 
 export const metadata = {
   title: "Proprioceptive Activities for Kids | Nature Play Ideas",
@@ -21,7 +21,7 @@ export const metadata = {
     "Learn how climbing, gardening, pushing, pulling, loose parts, and sensory plants can support children’s proprioceptive system through nature play.",
 
   alternates: {
-    canonical: "/blog/nature-play-and-our-proprioceptive-system/",
+    canonical: "/blog/posts/nature-play-and-our-proprioceptive-system/",
   },
 
   openGraph: {

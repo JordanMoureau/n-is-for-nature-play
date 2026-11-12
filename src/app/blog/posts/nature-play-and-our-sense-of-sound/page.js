@@ -12,7 +12,7 @@ import OrganicButton from "@/app/components/organicButton";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/blog/nature-play-and-our-sense-of-sound/`;
+const pageUrl = `${siteUrl}/blog/posts/nature-play-and-our-sense-of-sound/`;
 
 export const metadata = {
   title: "Auditory Sensory Activities for Kids | Nature Play Ideas",
@@ -21,7 +21,7 @@ export const metadata = {
     "Explore how nature sounds, social sounds, music, vibration, quiet spaces, and sensory plants can support children’s auditory development through nature play.",
 
   alternates: {
-    canonical: "/blog/nature-play-and-our-sense-of-sound/",
+    canonical: "/blog/posts/nature-play-and-our-sense-of-sound/",
   },
 
   openGraph: {

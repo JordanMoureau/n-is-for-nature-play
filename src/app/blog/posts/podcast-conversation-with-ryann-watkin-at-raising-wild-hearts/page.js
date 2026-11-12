@@ -12,7 +12,7 @@ import OrganicButton from "@/app/components/organicButton";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/blog/podcast-conversation-with-ryann-watkin-at-raising-wild-hearts/`;
+const pageUrl = `${siteUrl}/blog/posts/podcast-conversation-with-ryann-watkin-at-raising-wild-hearts/`;
 
 export const metadata = {
   title:
@@ -23,7 +23,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "/blog/podcast-conversation-with-ryann-watkin-at-raising-wild-hearts/",
+      "/blog/posts/podcast-conversation-with-ryann-watkin-at-raising-wild-hearts/",
   },
 
   openGraph: {

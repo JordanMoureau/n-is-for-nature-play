@@ -6,30 +6,35 @@ import Image from "next/image";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/design-a-space`;
+const pageUrl = `${siteUrl}/contact-us`;
+
+const title = "Contact N Is for Nature Play";
+const description =
+  "Contact Jena at N Is for Nature Play with questions about custom nature play space designs, sensory gardens, courses, ebooks, and outdoor learning resources.";
 
 export const metadata = {
-  title: "Design a Nature Play Space",
+  title: {
+    absolute: title,
+  },
 
-  description:
-    "Plan a thoughtful nature play space with expert guidance for sensory gardens, natural playgrounds, outdoor classrooms, and child-centered learning environments.",
+  description,
 
   alternates: {
-    canonical: "/design-a-space",
+    canonical: pageUrl,
   },
 
   openGraph: {
-    title: "Design a Nature Play Space",
-    description:
-      "Get expert guidance designing sensory-rich outdoor play and learning environments for children.",
-    url: "/design-a-space",
+    title,
+    description,
+    url: pageUrl,
+    siteName: "N Is for Nature Play",
     type: "website",
   },
 
   twitter: {
-    title: "Design a Nature Play Space",
-    description:
-      "Plan a sensory-rich nature play space, natural playground, or outdoor classroom with expert guidance.",
+    card: "summary_large_image",
+    title,
+    description,
   },
 };
 
@@ -37,83 +42,25 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": `${pageUrl}/#webpage`,
+      "@type": "ContactPage",
+      "@id": `${pageUrl}#webpage`,
       url: pageUrl,
-      name: "Design a Nature Play Space",
-      description:
-        "Plan a thoughtful nature play space with expert guidance for sensory gardens, natural playgrounds, outdoor classrooms, and child-centered learning environments.",
+      name: title,
+      description,
       isPartOf: {
         "@id": `${siteUrl}/#website`,
       },
-      about: [
-        {
-          "@type": "Thing",
-          name: "Nature play space design",
-        },
-        {
-          "@type": "Thing",
-          name: "Sensory garden design",
-        },
-        {
-          "@type": "Thing",
-          name: "Natural playground design",
-        },
-        {
-          "@type": "Thing",
-          name: "Outdoor classroom design",
-        },
-      ],
-      primaryImageOfPage: {
-        "@type": "ImageObject",
-        url: `${siteUrl}/images/design-a-nature-play-space.jpg`,
+      about: {
+        "@id": `${siteUrl}/#organization`,
       },
       breadcrumb: {
-        "@id": `${pageUrl}/#breadcrumb`,
+        "@id": `${pageUrl}#breadcrumb`,
       },
       inLanguage: "en-US",
     },
     {
-      "@type": "Service",
-      "@id": `${pageUrl}/#service`,
-      name: "Nature Play Space Design",
-      url: pageUrl,
-      description:
-        "Professional guidance for designing nature play spaces, sensory gardens, natural playgrounds, and outdoor learning environments for children.",
-      provider: {
-        "@id": `${siteUrl}/#organization`,
-      },
-      areaServed: {
-        "@type": "Country",
-        name: "United States",
-      },
-      serviceType: [
-        "Nature play space design",
-        "Sensory garden design",
-        "Natural playground design",
-        "Outdoor classroom design",
-      ],
-      audience: [
-        {
-          "@type": "Audience",
-          audienceType: "Parents",
-        },
-        {
-          "@type": "Audience",
-          audienceType: "Educators",
-        },
-        {
-          "@type": "Audience",
-          audienceType: "Schools and early childhood programs",
-        },
-      ],
-      mainEntityOfPage: {
-        "@id": `${pageUrl}/#webpage`,
-      },
-    },
-    {
       "@type": "BreadcrumbList",
-      "@id": `${pageUrl}/#breadcrumb`,
+      "@id": `${pageUrl}#breadcrumb`,
       itemListElement: [
         {
           "@type": "ListItem",
@@ -124,15 +71,13 @@ const jsonLd = {
         {
           "@type": "ListItem",
           position: 2,
-          name: "Design a Space",
+          name: "Contact Us",
           item: pageUrl,
         },
       ],
     },
   ],
 };
-
-// don't forget to adjust the meta data and page stuff for contact us page it's wrong
 
 export default function ContactUs() {
   return (

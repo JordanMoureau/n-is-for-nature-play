@@ -12,7 +12,7 @@ import OrganicButton from "@/app/components/organicButton";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/blog/ladybug-bridges-and-other-magic/`;
+const pageUrl = `${siteUrl}/blog/posts/ladybug-bridges-and-other-magic/`;
 
 export const metadata = {
   title: "Ladybug Bridges and Other Magic | Nature Play & Childhood Wonder",
@@ -21,7 +21,7 @@ export const metadata = {
     "A sensory garden story about ladybugs, slug trails, raspberries, imagination, and the small moments that help children build a deep connection with nature.",
 
   alternates: {
-    canonical: "/blog/ladybug-bridges-and-other-magic/",
+    canonical: "/blog/posts/ladybug-bridges-and-other-magic/",
   },
 
   openGraph: {
