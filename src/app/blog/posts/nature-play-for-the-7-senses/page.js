@@ -352,7 +352,7 @@ export default function NaturePlayForSevenSensesPost() {
 
               <OrganicButton
                 variant="green"
-                href="/product/ebook-nature-play-for-the-7-senses/"
+                href="/e-books-and-courses/nature-play-for-the-seven-senses/"
                 fontSize={"2.2rem"}
               >
                 Explore the Guide {">"}
