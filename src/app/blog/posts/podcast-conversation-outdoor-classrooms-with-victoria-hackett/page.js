@@ -12,7 +12,7 @@ import OrganicButton from "@/app/components/organicButton";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/blog/posts/podcast-conversation-outdoor-classrooms-with-victoria-hackett/`;
+const pageUrl = `${siteUrl}/blog/posts/podcast-conversation-outdoor-classrooms-with-victoria-hackett`;
 
 export const metadata = {
   title:
@@ -23,7 +23,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "/blog/posts/podcast-conversation-outdoor-classrooms-with-victoria-hackett/",
+      "/blog/posts/podcast-conversation-outdoor-classrooms-with-victoria-hackett",
   },
 
   openGraph: {

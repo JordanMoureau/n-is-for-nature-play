@@ -12,7 +12,7 @@ import OrganicButton from "@/app/components/organicButton";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/blog/posts/podcast-conversation-video-citycurrent-with-andrew-bartolotta/`;
+const pageUrl = `${siteUrl}/blog/posts/podcast-conversation-video-citycurrent-with-andrew-bartolotta`;
 
 export const metadata = {
   title: "Sensory-Rich Nature Play & Child Development | CityCURRENT Interview",
@@ -22,7 +22,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "/blog/posts/podcast-conversation-video-citycurrent-with-andrew-bartolotta/",
+      "/blog/posts/podcast-conversation-video-citycurrent-with-andrew-bartolotta",
   },
 
   openGraph: {

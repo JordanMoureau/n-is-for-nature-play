@@ -12,7 +12,7 @@ import OrganicButton from "@/app/components/organicButton";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/blog/posts/nature-play-and-the-sense-of-taste/`;
+const pageUrl = `${siteUrl}/blog/posts/nature-play-and-the-sense-of-taste`;
 
 export const metadata = {
   title: "Taste Sensory Activities for Kids | Nature Play Ideas",
@@ -21,7 +21,7 @@ export const metadata = {
     "Explore how edible gardens, herbs, berries, vegetables, edible flowers, and foraging can support children’s sense of taste through sensory-rich nature play.",
 
   alternates: {
-    canonical: "/blog/posts/nature-play-and-the-sense-of-taste/",
+    canonical: "/blog/posts/nature-play-and-the-sense-of-taste",
   },
 
   openGraph: {

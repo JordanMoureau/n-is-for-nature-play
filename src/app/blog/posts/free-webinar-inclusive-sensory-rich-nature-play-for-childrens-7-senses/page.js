@@ -12,7 +12,7 @@ import OrganicButton from "@/app/components/organicButton";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/blog/posts/free-webinar-inclusive-sensory-rich-nature-play-for-childrens-7-senses/`;
+const pageUrl = `${siteUrl}/blog/posts/free-webinar-inclusive-sensory-rich-nature-play-for-childrens-7-senses`;
 
 export const metadata = {
   title:
@@ -23,7 +23,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "/blog/posts/free-webinar-inclusive-sensory-rich-nature-play-for-childrens-7-senses/",
+      "/blog/posts/free-webinar-inclusive-sensory-rich-nature-play-for-childrens-7-senses",
   },
 
   openGraph: {

@@ -7,14 +7,14 @@ import WaveBottom from "@/app/components/waveBottom";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/terms/`;
+const pageUrl = `${siteUrl}/terms`;
 
 export const metadata = {
   title: "Terms & Conditions | N Is for Nature Play",
   description:
     "Terms and conditions governing use of the N Is for Nature Play website, digital resources, courses, programs, and services.",
   alternates: {
-    canonical: "/terms/",
+    canonical: "/terms",
   },
   openGraph: {
     title: "Terms & Conditions | N Is for Nature Play",
