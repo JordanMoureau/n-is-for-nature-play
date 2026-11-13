@@ -12,7 +12,7 @@ import OrganicButton from "@/app/components/organicButton";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://nisfornatureplay.com";
 
-const pageUrl = `${siteUrl}/blog/posts/nature-play-and-our-vestibular-system/`;
+const pageUrl = `${siteUrl}/blog/posts/nature-play-and-our-vestibular-system`;
 
 export const metadata = {
   title: "Vestibular Activities for Kids | Nature Play & Movement",
@@ -21,7 +21,7 @@ export const metadata = {
     "Explore how swinging, spinning, balancing, jumping, dancing, climbing, and sensory paths can support children’s vestibular development through nature play.",
 
   alternates: {
-    canonical: "/blog/posts/nature-play-and-our-vestibular-system/",
+    canonical: "/blog/posts/nature-play-and-our-vestibular-system",
   },
 
   openGraph: {
